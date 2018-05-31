@@ -9,6 +9,7 @@ public class LaunchingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launching);
+        String str = "Sreekar";
         System.out.println("First Statement added");
     }
 }
