@@ -3,49 +3,47 @@
     abi="x86"
     api-level="25"
     build-mode="FULL"
-    density="xhdpi"
+    density="560dpi"
     format="10"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.2"
-    timestamp="1527755719719"
+    timestamp="1527840589715"
     token="6363471879249331304"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1975" />
+        duration="344" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="122" />
+        duration="6" />
     <task
         name="verifier"
-        duration="97" />
+        duration="11" />
 
     <artifact
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -57,36 +55,37 @@
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1527755719719"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1527840589715"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -96,6 +95,9 @@
             type="SPLIT" />
         <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/instant-run-apk/debug/app-debug.apk"

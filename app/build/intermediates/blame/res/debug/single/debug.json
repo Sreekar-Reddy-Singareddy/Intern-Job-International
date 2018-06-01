@@ -1056,6 +1056,10 @@
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/res/merged/debug/drawable_ij_logo.png.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/res/drawable/ij_logo.png"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/97dad5a05b971f005a17d74fe389ecf5/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
