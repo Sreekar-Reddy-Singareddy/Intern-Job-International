@@ -1,49 +1,49 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6bf6e5166a8835bb659c7bbd67149c26/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/cff631c58499038e4ccb1cce12262042/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/15ec6e7a6829cbbbc07fb1dce4ad6a82/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/97dad5a05b971f005a17d74fe389ecf5/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8310f26e6f69a6d84442089e538a6aba/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6bf6e5166a8835bb659c7bbd67149c26/AndroidManifest.xml:25:5-29:19
@@ -82,6 +82,30 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.apple.interninternational.LoginScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:19:9-49
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:19:19-46
+activity#com.example.apple.interninternational.HomeScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:20:9-48
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:20:19-45
+activity#com.example.apple.interninternational.InternshipScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:9-54
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:19-51
+activity#com.example.apple.interninternational.InternationalScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:22:9-57
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:22:19-54
+activity#com.example.apple.interninternational.NationalScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:23:19-49
+activity#com.example.apple.interninternational.OpportunityScreen
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:24:9-64
+	android:name
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:24:19-52
 uses-sdk
 INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
@@ -90,12 +114,12 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/cache
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6bf6e5166a8835bb659c7bbd67149c26/AndroidManifest.xml:21:5-23:60
@@ -122,12 +146,12 @@ INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Interna
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1a30343fc7cf9ab3a315f2f2334ed66d/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79107ecaa949377893b3c471fba43a4f/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/85cebc051d79a2f6bbc2c4b3ee2ecde9/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6bf6e5166a8835bb659c7bbd67149c26/AndroidManifest.xml:26:9-28:38

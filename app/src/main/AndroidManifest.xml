@@ -9,13 +9,29 @@
         android:roundIcon="@drawable/ij_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LaunchingActivity">
+        <activity android:name=".LaunchingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginScreen" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".InternshipScreen" />
+        <activity android:name=".InternationalScreen" />
+        <activity android:name=".NationalScreen" />
+        <activity android:name=".OpportunityScreen" />
+        <activity android:name=".InternationalDetailsScreen" />
+        <activity android:name=".NgoScreen" />
+        <activity android:name=".NgoDetailsScreen" />
+        <activity android:name=".CvtipsScreen" />
+        <activity android:name=".CvTipsDetailsScreen" />
+        <activity android:name=".CompaniesScreen" />
+        <activity android:name=".BlogScreen" />
+        <activity android:name=".AboutScreen" />
+        <activity android:name=".RegisterScreen" />
+        <activity android:name=".ViewProfileScreen"></activity>
     </application>
 
 </manifest>

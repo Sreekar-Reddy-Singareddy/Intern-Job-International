@@ -15,7 +15,6 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ij_logo"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.apple.interninternational.LaunchingActivity" >
             <intent-filter>
@@ -24,6 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.apple.interninternational.LoginScreen" />
+        <activity android:name="com.example.apple.interninternational.HomeScreen" />
+        <activity android:name="com.example.apple.interninternational.InternshipScreen" />
+        <activity android:name="com.example.apple.interninternational.InternationalScreen" />
+        <activity android:name="com.example.apple.interninternational.NationalScreen" />
+        <activity android:name="com.example.apple.interninternational.OpportunityScreen" />
 
         <meta-data
             android:name="android.support.VERSION"
