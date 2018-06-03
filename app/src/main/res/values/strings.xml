@@ -3,4 +3,24 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Application Strings-->
+    <string name="app_settings_name">Settings</string>
+
+    <!--Login Screen Strings-->
+    <string name="login_button">Login</string>
+    <string name="signup_button">Signup</string>
+
+    <!--Home Screen Strings-->
+    <string name="international_textview">International</string>
+    <string name="national_textview">National</string>
+    <string name="home_screen_menu_home_item">Home</string>
+    <string name="home_screen_menu_internships_item">Internships</string>
+    <string name="home_screen_menu_companies_item">Companies</string>
+    <string name="home_screen_menu_clients_item">Clients</string>
+    <string name="home_screen_menu_ngos_item">NGOs</string>
+    <string name="home_screen_menu_cvtips_item">CV Tips</string>
+    <string name="home_screen_menu_blog_item">Blog</string>
+    <string name="home_screen_menu_aboutus_item">About Us</string>
+
 </resources>

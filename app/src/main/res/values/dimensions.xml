@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Application Dimensions-->
+    <dimen name="text_title_size_default">15sp</dimen>
+    <dimen name="text_subtitle_size_default">10sp</dimen>
+
+    <!--Home Screen Dimensions-->
+    <dimen name="cards_corner_radius">15dp</dimen>
+    <dimen name="act_home_screen_card_elevation">4dp</dimen>
+    <dimen name="act_home_screen_image_height">150dp</dimen>
+    <dimen name="act_home_screen_text_padding">15dp</dimen>
+</resources>

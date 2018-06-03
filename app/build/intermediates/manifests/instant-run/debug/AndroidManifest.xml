@@ -16,15 +16,23 @@
         android:roundIcon="@drawable/ij_logo"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.example.apple.interninternational.LaunchingActivity" >
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name="com.example.apple.interninternational.Activity.LaunchingScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.apple.interninternational.LoginScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.LoginScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.HomeScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.InternationalScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.NationalScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.OpportunityScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.InternationalDetailsScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.NgoDetailsScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.CvTipsDetailsScreen" />
+        <activity android:name="com.example.apple.interninternational.Activity.RegisterScreen" />
 
         <meta-data
             android:name="android.support.VERSION"

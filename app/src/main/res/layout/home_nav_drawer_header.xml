@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/home_nav_drawer_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/home_nav_drawer_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sreekar Reddy"
+        android:textSize="@dimen/text_title_size_default"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:paddingStart="@dimen/act_home_screen_text_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/home_nav_drawer_header_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sreekarreddy430@gmail.com"
+        android:textSize="@dimen/text_subtitle_size_default"
+        android:textColor="#ffffff"
+        android:paddingStart="@dimen/act_home_screen_text_padding"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"/>
+
+</LinearLayout>

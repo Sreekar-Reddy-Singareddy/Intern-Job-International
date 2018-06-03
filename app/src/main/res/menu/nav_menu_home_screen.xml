@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_screen_menu_home_item"
+            android:title="@string/home_screen_menu_home_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_internships_item"
+            android:title="@string/home_screen_menu_internships_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_companies_item"
+            android:title="@string/home_screen_menu_companies_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_clients_item"
+            android:title="@string/home_screen_menu_clients_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_ngos_item"
+            android:title="@string/home_screen_menu_ngos_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_cvtips_item"
+            android:title="@string/home_screen_menu_cvtips_item"></item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_screen_menu_blog_item"
+            android:title="@string/home_screen_menu_blog_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_aboutus_item"
+            android:title="@string/home_screen_menu_aboutus_item"></item>
+
+        <item
+            android:id="@+id/home_screen_menu_settings_item"
+            android:title="@string/app_settings_name"></item>
+
+    </group>
+
+</menu>

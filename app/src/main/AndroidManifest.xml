@@ -8,30 +8,23 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ij_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LaunchingScreen">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity.LaunchingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginScreen" />
-        <activity android:name=".HomeScreen" />
-        <activity android:name=".InternshipScreen" />
-        <activity android:name=".InternationalScreen" />
-        <activity android:name=".NationalScreen" />
-        <activity android:name=".OpportunityScreen" />
-        <activity android:name=".InternationalDetailsScreen" />
-        <activity android:name=".NgoScreen" />
-        <activity android:name=".NgoDetailsScreen" />
-        <activity android:name=".CvtipsScreen" />
-        <activity android:name=".CvTipsDetailsScreen" />
-        <activity android:name=".CompaniesScreen" />
-        <activity android:name=".BlogScreen" />
-        <activity android:name=".AboutScreen" />
-        <activity android:name=".RegisterScreen" />
-        <activity android:name=".ViewProfileScreen"></activity>
+        <activity android:name=".Activity.LoginScreen" />
+        <activity android:name=".Activity.HomeScreen" />
+        <activity android:name=".Activity.InternationalScreen" />
+        <activity android:name=".Activity.NationalScreen" />
+        <activity android:name=".Activity.OpportunityScreen" />
+        <activity android:name=".Activity.InternationalDetailsScreen" />
+        <activity android:name=".Activity.NgoDetailsScreen" />
+        <activity android:name=".Activity.CvTipsDetailsScreen" />
+        <activity android:name=".Activity.RegisterScreen" />
     </application>
 
 </manifest>
