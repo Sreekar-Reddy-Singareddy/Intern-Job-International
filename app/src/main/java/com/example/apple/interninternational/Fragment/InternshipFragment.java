@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.apple.interninternational.Activity.HomeScreen;
 import com.example.apple.interninternational.R;
 
 public class InternshipFragment extends Fragment implements View.OnClickListener {
@@ -57,6 +58,8 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
     public void onClick(View v) {
         if (v.getId() == R.id.frag_internship_screen_inter_card) {
             Toast.makeText(getContext(),"International Card",Toast.LENGTH_SHORT).show();
+            InternationalFragment internationalFragment = new InternationalFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,internationalFragment).commit();
         }
         else if (v.getId() == R.id.frag_internship_screen_nation_card) {
             Toast.makeText(getContext(),"National Card",Toast.LENGTH_SHORT).show();

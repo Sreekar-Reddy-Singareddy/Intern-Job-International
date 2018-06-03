@@ -26,7 +26,7 @@
         </activity>
         <activity android:name="com.example.apple.interninternational.Activity.LoginScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.HomeScreen" />
-        <activity android:name="com.example.apple.interninternational.Activity.InternationalScreen" />
+        <activity android:name="com.example.apple.interninternational.Fragment.InternationalFragment" />
         <activity android:name="com.example.apple.interninternational.Activity.NationalScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.OpportunityScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.InternationalDetailsScreen" />

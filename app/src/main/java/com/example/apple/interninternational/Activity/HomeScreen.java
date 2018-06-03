@@ -9,11 +9,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
 import com.example.apple.interninternational.R;
 
 public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    /**
+     * STATIC reference of the current activity
+     * Updated every time new instance of activity is created
+     */
+    public static HomeScreen HOMESCREEN_REFERENCE;
 
     // UI Properties
     private NavigationView navigationView;
@@ -36,12 +44,11 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_home_screen);
+        HOMESCREEN_REFERENCE = this;
         // Animation for screen navigation
         overridePendingTransition(R.anim.enter_right,R.anim.exit_left);
         // Initialise UI
         initialiseUi();
-        InternshipFragment internshipFragment = new InternshipFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.act_home_screen_fl_frag,internshipFragment).commit();
     }
 
     /**
@@ -51,6 +58,17 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
      */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.home_screen_menu_internships_item){
+            // Replaces the frame with internship fragment
+            InternshipFragment internshipFragment = new InternshipFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,internshipFragment).commit();
+        }
+        else if (item.getItemId() == R.id.home_screen_menu_home_item) {
+            Toast.makeText(this,"Home Screen",Toast.LENGTH_SHORT).show();
+        }
+        else if (item.getItemId() == R.id.home_screen_menu_home_item) {
+            // Return to home screen
+        }
         layout.closeDrawer(GravityCompat.START);
         return false;
     }

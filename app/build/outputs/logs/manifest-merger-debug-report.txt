@@ -103,10 +103,10 @@ activity#com.example.apple.interninternational.Activity.HomeScreen
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:20:9-57
 	android:name
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:20:19-54
-activity#com.example.apple.interninternational.Activity.InternationalScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:9-66
+activity#com.example.apple.interninternational.Fragment.InternationalFragment
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:9-68
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:19-63
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:21:19-65
 activity#com.example.apple.interninternational.Activity.NationalScreen
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/src/main/AndroidManifest.xml:22:9-61
 	android:name
