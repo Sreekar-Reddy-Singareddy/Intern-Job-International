@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".Activity.LoginScreen" />
         <activity android:name=".Activity.HomeScreen" />
-        <activity android:name=".Activity.InternationalScreen" />
+        <activity android:name=".Fragment.InternationalFragment" />
         <activity android:name=".Activity.NationalScreen" />
         <activity android:name=".Activity.OpportunityScreen" />
         <activity android:name=".Activity.InternationalDetailsScreen" />

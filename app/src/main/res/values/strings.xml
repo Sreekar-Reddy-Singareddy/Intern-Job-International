@@ -10,6 +10,8 @@
     <!--Login Screen Strings-->
     <string name="login_button">Login</string>
     <string name="signup_button">Signup</string>
+    <string name="login_username">User mail ID</string>
+    <string name="login_password">Password</string>
 
     <!--Home Screen Strings-->
     <string name="international_textview">International</string>

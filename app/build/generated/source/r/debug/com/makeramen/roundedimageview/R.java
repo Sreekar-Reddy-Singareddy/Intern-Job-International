@@ -22,9 +22,9 @@ public final class R {
         public static final int riv_tile_mode_y = 0x7f03013f;
     }
     public static final class id {
-        public static final int clamp = 0x7f080037;
-        public static final int mirror = 0x7f08007d;
-        public static final int repeat = 0x7f080090;
+        public static final int clamp = 0x7f080033;
+        public static final int mirror = 0x7f08007e;
+        public static final int repeat = 0x7f080091;
     }
     public static final class string {
         public static final int define_roundedimageview = 0x7f0d0024;

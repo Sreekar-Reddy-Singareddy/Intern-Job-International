@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/frag_home_screen_inter_card"
+        android:id="@+id/frag_internship_screen_inter_card"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         android:clickable="true"
         app:cardCornerRadius="@dimen/cards_corner_radius"
-        app:cardElevation="@dimen/act_home_screen_card_elevation"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/frag_home_screen_nation_card"
+        app:cardElevation="@dimen/frag_intership_screen_card_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/frag_internship_screen_nation_card"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -30,22 +31,22 @@
             android:orientation="vertical">
 
             <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/frag_home_screen_iv_international"
+                android:id="@+id/frag_internship_screen__iv_international"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/act_home_screen_image_height"
+                android:layout_height="@dimen/frag_intership_screen_image_height"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
                 app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
                 app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
 
             <TextView
-                android:id="@+id/frag_home_screen_tv_international"
+                android:id="@+id/frag_internship_screen_tv_international"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/act_home_screen_text_padding"
-                android:paddingLeft="@dimen/act_home_screen_text_padding"
-                android:paddingRight="@dimen/act_home_screen_text_padding"
-                android:paddingTop="@dimen/act_home_screen_text_padding"
+                android:paddingBottom="@dimen/frag_intership_screen_text_padding"
+                android:paddingLeft="@dimen/frag_intership_screen_text_padding"
+                android:paddingRight="@dimen/frag_intership_screen_text_padding"
+                android:paddingTop="@dimen/frag_intership_screen_text_padding"
                 android:text="@string/international_textview"
                 android:textAlignment="center"
                 android:textSize="20sp"
@@ -56,24 +57,23 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/frag_home_screen_nation_card"
+        android:id="@+id/frag_internship_screen_nation_card"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         android:clickable="true"
         app:cardCornerRadius="@dimen/cards_corner_radius"
-        app:cardElevation="@dimen/act_home_screen_card_elevation"
+        app:cardElevation="@dimen/frag_intership_screen_card_elevation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/frag_home_screen_inter_card"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_internship_screen_inter_card">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,22 +81,22 @@
             android:orientation="vertical">
 
             <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/frag_home_screen_iv_national"
+                android:id="@+id/frag_internship_screen_iv_national"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/act_home_screen_image_height"
+                android:layout_height="@dimen/frag_intership_screen_image_height"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
                 app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
                 app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
 
             <TextView
-                android:id="@+id/frag_home_screen_tv_national"
+                android:id="@+id/frag_internship_screen_tv_national"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/act_home_screen_text_padding"
-                android:paddingLeft="@dimen/act_home_screen_text_padding"
-                android:paddingRight="@dimen/act_home_screen_text_padding"
-                android:paddingTop="@dimen/act_home_screen_text_padding"
+                android:paddingBottom="@dimen/frag_intership_screen_text_padding"
+                android:paddingLeft="@dimen/frag_intership_screen_text_padding"
+                android:paddingRight="@dimen/frag_intership_screen_text_padding"
+                android:paddingTop="@dimen/frag_intership_screen_text_padding"
                 android:text="@string/national_textview"
                 android:textAlignment="center"
                 android:textSize="20sp"

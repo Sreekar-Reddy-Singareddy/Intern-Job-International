@@ -21,7 +21,7 @@
         android:textSize="@dimen/text_title_size_default"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:paddingStart="@dimen/act_home_screen_text_padding"
+        android:paddingStart="@dimen/frag_intership_screen_text_padding"
         android:paddingTop="5dp"
         android:paddingBottom="2dp"/>
 
@@ -32,7 +32,7 @@
         android:text="sreekarreddy430@gmail.com"
         android:textSize="@dimen/text_subtitle_size_default"
         android:textColor="#ffffff"
-        android:paddingStart="@dimen/act_home_screen_text_padding"
+        android:paddingStart="@dimen/frag_intership_screen_text_padding"
         android:paddingTop="2dp"
         android:paddingBottom="5dp"/>
 

@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.apple.interninternational.Fragment.HomeFragment;
+import com.example.apple.interninternational.Fragment.InternshipFragment;
 import com.example.apple.interninternational.R;
 
 public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -40,8 +40,8 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         overridePendingTransition(R.anim.enter_right,R.anim.exit_left);
         // Initialise UI
         initialiseUi();
-        HomeFragment homeFragment = new HomeFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.act_home_screen_fl_frag,homeFragment).commit();
+        InternshipFragment internshipFragment = new InternshipFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.act_home_screen_fl_frag,internshipFragment).commit();
     }
 
     /**
