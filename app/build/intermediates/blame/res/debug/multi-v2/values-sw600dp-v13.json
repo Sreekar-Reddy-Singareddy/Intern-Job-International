@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Applications/Android Studio.app/Contents/gradle/gradle-3.3/caches/transforms-1/files-1.1/design-26.1.0.aar/a8fca3871bf4085e140cceb91591738a/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -30,6 +20,16 @@
                         "endLines": "10,11,12,13,14,15,16,17,18,22",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
                         "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
+                    }
+                },
+                {
+                    "source": "/Applications/Android Studio.app/Contents/gradle/gradle-3.3/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f24ade387d1696ee0a26116a0139e6b2/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-International/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/values-v26/values-v26.xml",
+                    "source": "/Applications/Android Studio.app/Contents/gradle/gradle-3.3/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f24ade387d1696ee0a26116a0139e6b2/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/res/values-v26/values-v26.xml",
+                    "source": "/Applications/Android Studio.app/Contents/gradle/gradle-3.3/caches/transforms-1/files-1.1/design-26.1.0.aar/a8fca3871bf4085e140cceb91591738a/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

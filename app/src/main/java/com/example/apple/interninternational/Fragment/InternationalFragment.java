@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.apple.interninternational.Activity.HomeScreen;
 import com.example.apple.interninternational.R;
 
 public class InternationalFragment extends Fragment implements View.OnClickListener {
@@ -46,6 +47,7 @@ public class InternationalFragment extends Fragment implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,new InternationalDetailsFragment()).commit();
         switch (v.getId()) {
             case R.id.frag_international_screen_cv_india:
                 Toast.makeText(getContext(),"India",Toast.LENGTH_SHORT).show();

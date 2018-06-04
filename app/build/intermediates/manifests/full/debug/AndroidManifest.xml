@@ -29,7 +29,7 @@
         <activity android:name="com.example.apple.interninternational.Fragment.InternationalFragment" />
         <activity android:name="com.example.apple.interninternational.Activity.NationalScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.OpportunityScreen" />
-        <activity android:name="com.example.apple.interninternational.Activity.InternationalDetailsScreen" />
+        <activity android:name="com.example.apple.interninternational.Fragment.InternationalDetailsFragment" />
         <activity android:name="com.example.apple.interninternational.Activity.NgoDetailsScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.CvTipsDetailsScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.RegisterScreen" />
