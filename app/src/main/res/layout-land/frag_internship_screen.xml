@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/frag_intership_screen_image_height"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/china_two"
                 app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
                 app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
 
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/frag_intership_screen_image_height"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/india"
                 app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
                 app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
 

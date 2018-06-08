@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_gravity="top"
-            android:background="@color/colorPrimary"
+            android:background="#cfd2d6"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         </android.support.v7.widget.Toolbar>
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#f4b942">
+            android:background="#ffffff">
 
         </FrameLayout>
 

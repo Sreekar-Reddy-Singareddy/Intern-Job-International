@@ -107,10 +107,10 @@ activity#com.example.apple.interninternational.Fragment.InternationalFragment
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:21:9-68
 	android:name
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:21:19-65
-activity#com.example.apple.interninternational.Activity.NationalScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:9-61
+activity#com.example.apple.interninternational.Fragment.NationalFragment
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:9-63
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:19-58
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:19-60
 activity#com.example.apple.interninternational.Activity.OpportunityScreen
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:23:9-64
 	android:name

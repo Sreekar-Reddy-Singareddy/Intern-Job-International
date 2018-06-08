@@ -104,4 +104,9 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this,"Back",Toast.LENGTH_LONG).show();
+    }
 }

@@ -1,3 +1,18 @@
 COMPLETELY WORKING:
 - InternationalDetailsFragment UI skeleton done. Content not yet programmed.
-- Programmed the host activity (HomeScreen.java) action bar to show download icon whenever appropriate.
+- Programmed the host activity (HomeScreen.java) action bar to show download icon whenever appropriate
+- Created complete UI for NationalFragment.java class
+- UI even populates the data getting the user inputs
+- Basic programming of three fragment classes is done. They just populate the recycler views as of now
+
+WORK PLAN FOR NATIONAL SCREEN:
+- Need 4 fragments for 4 pages in pager view
++ 3 fragments display the list of items
++ There will only be 1 layout xml for all the 3 lists. This layout file will have 1 list view in it and nothing more
++ There will be 3 fragment subclasses to control the behaviour of the 3 lists
++ All 3 fragment classes use the 1 layout file itself
++ Each list uses different custom layout xml file - 3 custom files
++ There will only be 1 adapter class for all the 3 lists
++ The adapter constructor must take the custom cell data for each list and also the corresponding data source
++ There will be 3 bean classes one each for 3 lists (Branch, Location, Duration)
++ All this must happen with NationalFragment.java class as the origin

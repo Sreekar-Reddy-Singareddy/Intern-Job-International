@@ -66,6 +66,9 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
         }
         else if (v.getId() == R.id.frag_internship_screen_nation_card) {
             Toast.makeText(getContext(),"National Card",Toast.LENGTH_SHORT).show();
+            // TODO: Load the national fragment
+            NationalFragment nationalFragment = new NationalFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,nationalFragment).commit();
         }
     }
 
