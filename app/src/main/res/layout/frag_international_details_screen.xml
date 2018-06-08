@@ -1,10 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/frag_inter_details_screen_bt_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frag_inter_details_screen_vp_pager"
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#62f7aa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/frag_inter_details_screen_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="HellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHelllooooooooooo"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_inter_details_screen_vp_pager" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frag_inter_details_screen_vp_image_pager"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#62f7aa"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_inter_details_screen_tv_description">
+
+            </android.support.v4.view.ViewPager>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/frag_inter_details_screen_bt_apply"
@@ -20,18 +80,5 @@
 
     </Button>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/frag_inter_details_screen_vp_pager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#62f7aa"
-        android:layout_marginBottom="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/frag_inter_details_screen_bt_apply"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>
+

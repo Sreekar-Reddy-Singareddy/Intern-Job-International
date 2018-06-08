@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/download_icon_menu_download_item"
+        android:icon="@drawable/download_icon"
+        android:title="Download"
+        app:showAsAction="always">
+
+    </item>
+
+</menu>

@@ -1,0 +1,3 @@
+COMPLETELY WORKING:
+- InternationalDetailsFragment UI skeleton done. Content not yet programmed.
+- Programmed the host activity (HomeScreen.java) action bar to show download icon whenever appropriate.

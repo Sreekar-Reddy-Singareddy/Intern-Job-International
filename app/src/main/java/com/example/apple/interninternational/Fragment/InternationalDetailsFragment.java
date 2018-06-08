@@ -1,5 +1,6 @@
 package com.example.apple.interninternational.Fragment;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -28,7 +29,13 @@ public class InternationalDetailsFragment extends Fragment {
         return fragmentView;
     }
 
+    /**
+     * Initial state of the UI is created here
+     */
+    @SuppressLint("RestrictedApi")
     private void initialiseUi() {
+        HomeScreen.shouldShowDownloadIcon = true;
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportActionBar().invalidateOptionsMenu();
         pager = (ViewPager) fragmentView.findViewById(R.id.frag_inter_details_screen_vp_pager);
         adapter = new InterDetailsPagerAdapter(HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager());
         pager.setPageTransformer(true,new DepthPageTransformer());

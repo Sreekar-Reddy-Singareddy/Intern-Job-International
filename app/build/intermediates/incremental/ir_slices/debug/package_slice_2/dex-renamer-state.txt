@@ -1,4 +1,4 @@
-#Mon Jun 04 19:03:31 IST 2018
-base.0=/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/2
+#Fri Jun 08 10:31:28 IST 2018
+base.0=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex

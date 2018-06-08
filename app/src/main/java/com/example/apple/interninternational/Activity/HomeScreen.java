@@ -1,5 +1,6 @@
 package com.example.apple.interninternational.Activity;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -8,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -22,6 +24,11 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
      * Updated every time new instance of activity is created
      */
     public static HomeScreen HOMESCREEN_REFERENCE;
+    /**
+     * This remembers whether the options menu should show download icon or not
+     * Updated in the InternationalFragment.java
+     */
+    public static boolean shouldShowDownloadIcon = false;
 
     // UI Properties
     private NavigationView navigationView;
@@ -56,6 +63,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
      * @param item : the menu item that has been selected
      * @return
      */
+    @SuppressLint("RestrictedApi")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.home_screen_menu_internships_item){
@@ -65,6 +73,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         }
         else if (item.getItemId() == R.id.home_screen_menu_home_item) {
             Toast.makeText(this,"Home Screen",Toast.LENGTH_SHORT).show();
+            getSupportActionBar().invalidateOptionsMenu();
         }
         else if (item.getItemId() == R.id.home_screen_menu_home_item) {
             // Return to home screen
@@ -74,10 +83,24 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Create download icon menu option based on the flag
+        if (shouldShowDownloadIcon){
+            shouldShowDownloadIcon = false; // Reset the flag to false
+            getMenuInflater().inflate(R.menu.download_icon_menu,menu);
+            return true;
+        }
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Check which item is selected and perform action appropriately
         if (item.getItemId() == android.R.id.home) {
             layout.openDrawer(GravityCompat.START);
+        }
+        else if (item.getItemId() == R.id.download_icon_menu_download_item){
+            Toast.makeText(this,"Downloading...",Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
     }

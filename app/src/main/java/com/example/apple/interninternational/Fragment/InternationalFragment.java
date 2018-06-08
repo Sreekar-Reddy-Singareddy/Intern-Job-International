@@ -1,5 +1,6 @@
 package com.example.apple.interninternational.Fragment;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -30,7 +31,9 @@ public class InternationalFragment extends Fragment implements View.OnClickListe
     /**
      * Initialises the fragment
      */
+    @SuppressLint("RestrictedApi")
     public void initialiseUi() {
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportActionBar().invalidateOptionsMenu();
         indiaCard = (CardView) fragmentMainView.findViewById(R.id.frag_international_screen_cv_india);
         chinaCard = (CardView) fragmentMainView.findViewById(R.id.frag_international_screen_cv_china);
         germanyCard = (CardView) fragmentMainView.findViewById(R.id.frag_international_screen_cv_germany);
@@ -51,16 +54,34 @@ public class InternationalFragment extends Fragment implements View.OnClickListe
         switch (v.getId()) {
             case R.id.frag_international_screen_cv_india:
                 Toast.makeText(getContext(),"India",Toast.LENGTH_SHORT).show();
+                HomeScreen.shouldShowDownloadIcon = true;
                 break;
             case R.id.frag_international_screen_cv_china:
                 Toast.makeText(getContext(),"China",Toast.LENGTH_SHORT).show();
+                HomeScreen.shouldShowDownloadIcon = true;
                 break;
             case R.id.frag_international_screen_cv_germany:
                 Toast.makeText(getContext(),"Germany",Toast.LENGTH_SHORT).show();
+                HomeScreen.shouldShowDownloadIcon = true;
                 break;
             case R.id.frag_international_screen_cv_ij:
                 Toast.makeText(getContext(),"I&J",Toast.LENGTH_SHORT).show();
+                HomeScreen.shouldShowDownloadIcon = true;
                 break;
         }
+        if (HomeScreen.shouldShowDownloadIcon){
+            programActionBar();
+        }
+    }
+
+    /**
+     * This method creates a new menu bar on the host activity's
+     * action bar
+     */
+    @SuppressLint("RestrictedApi")
+    private boolean programActionBar(){
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportActionBar().invalidateOptionsMenu();
+        return false;
     }
 }
+

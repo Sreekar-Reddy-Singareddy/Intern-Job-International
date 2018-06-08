@@ -1,5 +1,6 @@
 package com.example.apple.interninternational.Fragment;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -43,7 +44,9 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
     /**
      * Called to do the intial setup of the fragment
      */
+    @SuppressLint("RestrictedApi")
     public void initialiseUi() {
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportActionBar().invalidateOptionsMenu();
         internationalCard = (CardView) fragmentMainView.findViewById(R.id.frag_internship_screen_inter_card);
         nationalCard = (CardView) fragmentMainView.findViewById(R.id.frag_internship_screen_nation_card);
         internationalCard.setOnClickListener(this);

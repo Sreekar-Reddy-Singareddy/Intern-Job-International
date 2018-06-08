@@ -1,19 +1,27 @@
 #Internal package file, do not edit.
-#Mon Jun 04 19:22:47 IST 2018
-1.base=/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/11
-2.path=classes.dex
-0.baseType=DIRECTORY
-3.baseType=DIRECTORY
-2.base=/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/13
-3.set=DEX
-2.set=DEX
-1.baseType=DIRECTORY
-3.path=classes.dex
-count=4
-1.set=DEX
+#Fri Jun 08 10:31:28 IST 2018
+2.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/15
+5.set=DEX
 0.path=classes.dex
-3.base=/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/12
-0.set=DEX
-0.base=/Users/subbuilla/Desktop/Sreekar's/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/14
 2.baseType=DIRECTORY
+3.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/14
+2.set=DEX
 1.path=classes.dex
+4.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/16
+count=6
+5.baseType=DIRECTORY
+2.path=classes.dex
+5.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/11
+4.set=DEX
+3.path=classes.dex
+3.baseType=DIRECTORY
+1.set=DEX
+4.path=classes.dex
+1.baseType=DIRECTORY
+5.path=classes.dex
+0.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/13
+0.baseType=DIRECTORY
+3.set=DEX
+1.base=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/12
+4.baseType=DIRECTORY
+0.set=DEX
