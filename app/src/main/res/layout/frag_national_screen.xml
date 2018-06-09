@@ -10,16 +10,16 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/frag_national_screen_vp_pager"
         android:layout_width="0dp"
-        android:layout_height="400dp"
-        android:background="#ffffff"
+        android:layout_height="350dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/frag_national_screen_ll_imagebuttons"
@@ -76,4 +76,43 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/frag_national_screen_bt_core"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Core"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <Button
+            android:id="@+id/frag_national_screen_bt_noncore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Non-Core"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="56dp" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

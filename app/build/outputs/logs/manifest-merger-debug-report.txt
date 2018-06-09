@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:design:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/ff7cd54595988e27afd9068b243aa73f/AndroidManifest.xml:2:1-11:12
@@ -20,25 +20,25 @@ MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/apple/.gradle/ca
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/15ec6e7a6829cbbbc07fb1dce4ad6a82/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/97dad5a05b971f005a17d74fe389ecf5/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8310f26e6f69a6d84442089e538a6aba/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:5:5-28:19
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:5:5-27:19
 MERGED from [com.android.support:design:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/AndroidManifest.xml:25:5-29:19
@@ -111,26 +111,22 @@ activity#com.example.apple.interninternational.Fragment.NationalFragment
 ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:9-63
 	android:name
 		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:22:19-60
-activity#com.example.apple.interninternational.Activity.OpportunityScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:23:9-64
-	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:23:19-61
 activity#com.example.apple.interninternational.Fragment.InternationalDetailsFragment
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:24:9-75
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:23:9-75
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:24:19-72
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:23:19-72
 activity#com.example.apple.interninternational.Activity.NgoDetailsScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:25:9-63
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:25:19-60
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:24:19-60
 activity#com.example.apple.interninternational.Activity.CvTipsDetailsScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:26:9-66
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:25:9-66
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:26:19-63
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:25:19-63
 activity#com.example.apple.interninternational.Activity.RegisterScreen
-ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:27:9-61
+ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:26:9-61
 	android:name
-		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:27:19-58
+		ADDED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml:26:19-58
 uses-sdk
 INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/AndroidManifest.xml

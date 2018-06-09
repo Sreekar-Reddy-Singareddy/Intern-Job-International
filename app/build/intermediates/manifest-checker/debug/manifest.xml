@@ -28,7 +28,6 @@
         <activity android:name="com.example.apple.interninternational.Activity.HomeScreen" />
         <activity android:name="com.example.apple.interninternational.Fragment.InternationalFragment" />
         <activity android:name="com.example.apple.interninternational.Fragment.NationalFragment" />
-        <activity android:name="com.example.apple.interninternational.Activity.OpportunityScreen" />
         <activity android:name="com.example.apple.interninternational.Fragment.InternationalDetailsFragment" />
         <activity android:name="com.example.apple.interninternational.Activity.NgoDetailsScreen" />
         <activity android:name="com.example.apple.interninternational.Activity.CvTipsDetailsScreen" />

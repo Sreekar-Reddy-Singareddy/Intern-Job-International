@@ -22,8 +22,9 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
     // UI Properties
     private View mainView;
     private ViewPager viewPager;
-    private Button skip, applyFilters;
+    private Button skip, applyFilters, core, noncore;
     private ImageButton next, previous;
+    private boolean coreFlag = false, noncoreFlag = false;
 
     /**
      * Inflates a view with the provided layout xml file
@@ -44,20 +45,24 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
     private void initialiseUi() {
         viewPager = (ViewPager)mainView.findViewById(R.id.frag_national_screen_vp_pager);
         // Create adapter for pager and set it
-        FilterInputsPagerAdapter adapter = new FilterInputsPagerAdapter(HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager(),4);
+        FilterInputsPagerAdapter adapter = new FilterInputsPagerAdapter(HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager(),3);
         viewPager.setAdapter(adapter);
         // Create animation for pager and set it
         DepthPageTransformer depthPageTransformer = new DepthPageTransformer();
         viewPager.setPageTransformer(true,depthPageTransformer);
         skip = (Button) mainView.findViewById(R.id.frag_national_screen_bt_skip);
         applyFilters = (Button) mainView.findViewById(R.id.frag_national_screen_bt_applyfilters);
+        core = (Button) mainView.findViewById(R.id.frag_national_screen_bt_core);
+        noncore = (Button) mainView.findViewById(R.id.frag_national_screen_bt_noncore);
         next = (ImageButton) mainView.findViewById(R.id.frag_national_screen_ib_next);
         previous = (ImageButton) mainView.findViewById(R.id.frag_national_screen_ib_previous);
         skip.setOnClickListener(this);
         applyFilters.setOnClickListener(this);
         next.setOnClickListener(this);
         previous.setOnClickListener(this);
-        applyFilters.setEnabled(false);
+        core.setOnClickListener(this);
+        noncore.setOnClickListener(this);
+//        applyFilters.setEnabled(false);
     }
 
     /**
@@ -73,6 +78,8 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
         else if (v.getId() == applyFilters.getId()){
             // TODO: Take the user given inputs and navigate them to opportunites list
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(),"Apply",Toast.LENGTH_SHORT).show();
+            OpportunityFragment opportunityFragment = new OpportunityFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,opportunityFragment).commit();
         }
         else if (v.getId() == next.getId()){
             // TODO: Flip the page in the page viewer by 1
@@ -89,6 +96,44 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(),"Previous",Toast.LENGTH_SHORT).show();
             if (viewPager.getCurrentItem() > 0){
                 viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
+            }
+        }
+        else if (v.getId() == core.getId()) {
+            // TODO: Remember the user's choice
+            Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(),"Core",Toast.LENGTH_SHORT).show();
+            /**
+             * Check the user's current choice and the toggle the flag for every button click
+             */
+            if (coreFlag){
+                coreFlag = false;
+            }
+            else {
+                coreFlag = true;
+            }
+            if (coreFlag) {
+                core.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+            }
+            else {
+                core.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_dark));
+            }
+        }
+        else if (v.getId() == noncore.getId()) {
+            // TODO: Remember the user's choice
+            Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(),"Noncore",Toast.LENGTH_SHORT).show();
+            /**
+             * Check the user's current choice and the toggle the flag for every button click
+             */
+            if (noncoreFlag){
+                noncoreFlag = false;
+            }
+            else {
+                noncoreFlag = true;
+            }
+            if (noncoreFlag) {
+                noncore.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+            }
+            else {
+                noncore.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_dark));
             }
         }
     }

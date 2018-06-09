@@ -20,7 +20,6 @@
         <activity android:name=".Activity.HomeScreen" />
         <activity android:name=".Fragment.InternationalFragment" />
         <activity android:name=".Fragment.NationalFragment" />
-        <activity android:name=".Activity.OpportunityScreen" />
         <activity android:name=".Fragment.InternationalDetailsFragment" />
         <activity android:name=".Activity.NgoDetailsScreen" />
         <activity android:name=".Activity.CvTipsDetailsScreen" />

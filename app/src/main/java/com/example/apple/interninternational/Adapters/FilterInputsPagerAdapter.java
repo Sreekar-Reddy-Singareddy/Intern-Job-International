@@ -43,7 +43,7 @@ public class FilterInputsPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 return new DurationsListFragment();
             default:
-                return new BranchListFragment();
+                return null;
         }
     }
 }

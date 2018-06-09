@@ -1,0 +1,21 @@
+TO DO TASKS:
++ Create the 4th page for the page viewer in which user can choose core or non core options
++ Create xml layout for the above page
++ Create java class for programming the fragment above
++ Connect the whole fragment thing as the 4th page in the page viewer
++ Once the user inputs are taken the user must navigate to the next screen
++ Next screen must display the list of available opportunities based on the filters applied
++ Create xml layout file for displaying the list of opportunities
++ Create java file to control the behaviour of this fragment
++ Create adapter to control the recycler view and its data
++ Create the custom layout xml file for each of the items
+
+COMPLETELY WORKING:
+- Embedded the 4th page as well in to the page viewer
+- As of now, the page viewer works well and good with the basic sekelton and UI flow
+- Finished navigating from the NationalFragment.java to OpportunitiesFragment.java
+- Navigation happens seamlessly from all the contorls
+- Modified core and noncore input filter representation. Initially it was cards and now it is outside page viewer as simple buttons
+- Buttons for both core and noncore work flawlessly
+- Opportunities list displays some dummy data as of now
+- The above list can be bind to realtime data afterwards
