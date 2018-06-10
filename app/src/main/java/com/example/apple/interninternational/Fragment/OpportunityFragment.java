@@ -44,4 +44,5 @@ public class OpportunityFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext());
         recyclerView.setLayoutManager(layoutManager);
     }
+
 }

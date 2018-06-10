@@ -8,23 +8,23 @@ package com.makeramen.roundedimageview;
 
 public final class R {
     public static final class attr {
-        public static final int riv_border_color = 0x7f030134;
-        public static final int riv_border_width = 0x7f030135;
-        public static final int riv_corner_radius = 0x7f030136;
-        public static final int riv_corner_radius_bottom_left = 0x7f030137;
-        public static final int riv_corner_radius_bottom_right = 0x7f030138;
-        public static final int riv_corner_radius_top_left = 0x7f030139;
-        public static final int riv_corner_radius_top_right = 0x7f03013a;
-        public static final int riv_mutate_background = 0x7f03013b;
-        public static final int riv_oval = 0x7f03013c;
-        public static final int riv_tile_mode = 0x7f03013d;
-        public static final int riv_tile_mode_x = 0x7f03013e;
-        public static final int riv_tile_mode_y = 0x7f03013f;
+        public static final int riv_border_color = 0x7f03013f;
+        public static final int riv_border_width = 0x7f030140;
+        public static final int riv_corner_radius = 0x7f030141;
+        public static final int riv_corner_radius_bottom_left = 0x7f030142;
+        public static final int riv_corner_radius_bottom_right = 0x7f030143;
+        public static final int riv_corner_radius_top_left = 0x7f030144;
+        public static final int riv_corner_radius_top_right = 0x7f030145;
+        public static final int riv_mutate_background = 0x7f030146;
+        public static final int riv_oval = 0x7f030147;
+        public static final int riv_tile_mode = 0x7f030148;
+        public static final int riv_tile_mode_x = 0x7f030149;
+        public static final int riv_tile_mode_y = 0x7f03014a;
     }
     public static final class id {
         public static final int clamp = 0x7f080033;
-        public static final int mirror = 0x7f0800a1;
-        public static final int repeat = 0x7f0800b9;
+        public static final int mirror = 0x7f0800a2;
+        public static final int repeat = 0x7f0800bc;
     }
     public static final class string {
         public static final int define_roundedimageview = 0x7f0d0024;
@@ -39,7 +39,7 @@ public final class R {
         public static final int library_roundedimageview_repositoryLink = 0x7f0d0037;
     }
     public static final class styleable {
-        public static final int[] RoundedImageView = { 0x0101011d, 0x7f030134, 0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f03013f };
+        public static final int[] RoundedImageView = { 0x0101011d, 0x7f03013f, 0x7f030140, 0x7f030141, 0x7f030142, 0x7f030143, 0x7f030144, 0x7f030145, 0x7f030146, 0x7f030147, 0x7f030148, 0x7f030149, 0x7f03014a };
         public static final int RoundedImageView_android_scaleType = 0;
         public static final int RoundedImageView_riv_border_color = 1;
         public static final int RoundedImageView_riv_border_width = 2;

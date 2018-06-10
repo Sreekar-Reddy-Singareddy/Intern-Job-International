@@ -7,8 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.apple.interninternational.Activity.HomeScreen;
 import com.example.apple.interninternational.Beans.Opportunity;
+import com.example.apple.interninternational.Fragment.OpportunityDetailsFragment;
+import com.example.apple.interninternational.Fragment.OpportunityFragment;
 import com.example.apple.interninternational.R;
 
 import org.w3c.dom.Text;
@@ -69,7 +73,7 @@ public class OpportunitiesListAdapter extends RecyclerView.Adapter<Opportunities
      * View holder class creates the view holder instance
      * All the subviews are also created based on the custom layout xml file
      */
-    public class OpportunitiesListViewHolder extends RecyclerView.ViewHolder {
+    public class OpportunitiesListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         // Subview properties
         private ImageView image;
@@ -81,6 +85,19 @@ public class OpportunitiesListAdapter extends RecyclerView.Adapter<Opportunities
             name = (TextView) itemView.findViewById(R.id.opp_list_cell_layout_tv_name);
             location = (TextView) itemView.findViewById(R.id.opp_list_cell_layout_tv_loaction);
             duration = (TextView) itemView.findViewById(R.id.opp_list_cell_layout_tv_duration);
+            itemView.setOnClickListener(this);
+        }
+
+        /**
+         * Called when any of the items is clicked from the list
+         * This clicks are handled by taking the user to the next detailed screen
+         * @param v
+         */
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context,"Clicked"+name.getText().toString(),Toast.LENGTH_SHORT).show();
+            OpportunityDetailsFragment opportunityDetailsFragment = new OpportunityDetailsFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,opportunityDetailsFragment).commit();
         }
     }
 }

@@ -1,0 +1,21 @@
+TO DO TASKS:
+- Complete the opportunity details fragment UI and flow
++ Create new xml layut file for the opp details
++ Create corresponding java source file to control the behaviour of the opp details screen
++ Create adapter for the pager in the opportunity details screen
++ Create two fragment xml layout files to layout pages of the above pager
++ Create two java source files to control these fragments
+- Complete the UI of summary screen
+- Complete the UI of full info screen
+- Complete the programming of full info screen with dummy data
+
+
+COMPLETELY WORKING:
+- Able to navigate from the list of opportunities to the detailed opportunity data
+- Able to listen to the click events from the recycler list
+- Able to navigate to the next detailed screen when clicked on any item in the lists
+- After navigating to the next detailed screen, pager will be shown
+- The pager 1st page shows only the summary of the opp details
+- The pager 2nd page shows another pager
+- The inner pager contains 5 tabs - job details, description, skills, requirements, photos
+- All the above plan works perfectly fine as of now. But there is no realtime data as such for now
