@@ -13,8 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.apple.interninternational.Fragment.CompaniesFragment;
 import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
+import com.example.apple.interninternational.Fragment.NgoFragment;
 import com.example.apple.interninternational.R;
 
 public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -75,8 +77,20 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             Toast.makeText(this,"Home Screen",Toast.LENGTH_SHORT).show();
             getSupportActionBar().invalidateOptionsMenu();
         }
-        else if (item.getItemId() == R.id.home_screen_menu_home_item) {
-            // Return to home screen
+        else if (item.getItemId() == R.id.home_screen_menu_companies_item) {
+            // Navigate to companies screen
+            // Invalidate the options menu once and then navigate to the screen
+            getSupportActionBar().invalidateOptionsMenu();
+            Toast.makeText(this,"Companies Screen",Toast.LENGTH_SHORT).show();
+            CompaniesFragment companiesFragment = new CompaniesFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,companiesFragment).commit();
+        }
+        else if (item.getItemId() == R.id.home_screen_menu_ngos_item){
+            // Navigate the user to ngos screen
+            getSupportActionBar().invalidateOptionsMenu();
+            Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "NGO screen",Toast.LENGTH_SHORT).show();
+            NgoFragment ngoFragment = new NgoFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,ngoFragment).commit();
         }
         layout.closeDrawer(GravityCompat.START);
         return false;

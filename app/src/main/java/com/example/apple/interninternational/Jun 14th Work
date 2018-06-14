@@ -1,0 +1,9 @@
+TO DO TASKS:
++ Create and complete the UI for the NGOs screen
++ Create xml layout file same as that of internships screen
++ Create source java file for controlling the layout
+
+COMPLETELY WORKING:
+- Completed UI flow from drawer to the ngos fragment
+- Both the cards in the ngo screen are clickable
+

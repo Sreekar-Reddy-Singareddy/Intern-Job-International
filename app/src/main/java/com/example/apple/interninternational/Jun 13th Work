@@ -1,0 +1,12 @@
+TO DO TASKS:
++ Add one button in the opportunity details page to apply or login&apply for the opportunity
++ Design the complete UI for the companies screen
++ Above includes creating custom table cell for each company
++ Create one xml layout for the UI
++ Creata one java source file to control the fragment behaviour
+
+COMPLETELY WORKING:
+- Added one button in the opportunity details and its working all fine
+- Basic navigation from drawer to companies screen done
+- Displays list of companies on the companies screen
+- Any company is selectable and also the index of selected company is obtained in the listener

@@ -6,13 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/frag_opportunity_details_vp_pager"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/frag_opportunity_details_vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light">
+
+        </android.support.v4.view.ViewPager>
+
+        <Button
+            android:id="@+id/frag_opportunity_details_bt_loginapply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_red_dark"
+            android:text="Button"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

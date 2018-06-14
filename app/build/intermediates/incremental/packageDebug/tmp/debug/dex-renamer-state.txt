@@ -1,4 +1,19 @@
-#Sun Jun 10 11:33:55 IST 2018
-base.0=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/18
+#Thu Jun 14 07:14:20 IST 2018
+path.1=classes.dex
 path.0=classes.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.5=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/32
+base.4=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/35
+base.3=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/34
+base.2=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/31
+base.1=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/30
+base.0=/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/transforms/dexMerger/debug/33
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex

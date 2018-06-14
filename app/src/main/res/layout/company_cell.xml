@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/company_cell_riv_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius_top_left="10dp"
+        app:riv_corner_radius_top_right="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/company_cell_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#aa6c1b91"
+        android:textColor="#ffffff"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/company_cell_riv_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+</android.support.constraint.ConstraintLayout>

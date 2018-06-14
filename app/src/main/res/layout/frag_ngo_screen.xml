@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/frag_ngo_screen_ngos_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/cards_corner_radius"
+        app:cardElevation="@dimen/frag_intership_screen_card_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/frag_ngo_screen_skillsdev_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/frag_ngo_screen__iv_ngos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frag_intership_screen_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ngos"
+                app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
+                app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
+
+            <TextView
+                android:id="@+id/frag_ngo_screen_tv_ngos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/frag_intership_screen_text_padding"
+                android:paddingLeft="@dimen/frag_intership_screen_text_padding"
+                android:paddingRight="@dimen/frag_intership_screen_text_padding"
+                android:paddingTop="@dimen/frag_intership_screen_text_padding"
+                android:text="NGOs"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/frag_ngo_screen_skillsdev_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/cards_corner_radius"
+        app:cardElevation="@dimen/frag_intership_screen_card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_ngo_screen_ngos_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/frag_ngo_screen_iv_skillsdev"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frag_intership_screen_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skill_dev"
+                app:riv_corner_radius_top_left="@dimen/cards_corner_radius"
+                app:riv_corner_radius_top_right="@dimen/cards_corner_radius" />
+
+            <TextView
+                android:id="@+id/frag_ngo_screen_tv_skillsdev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/frag_intership_screen_text_padding"
+                android:paddingLeft="@dimen/frag_intership_screen_text_padding"
+                android:paddingRight="@dimen/frag_intership_screen_text_padding"
+                android:paddingTop="@dimen/frag_intership_screen_text_padding"
+                android:text="Skill Development"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
