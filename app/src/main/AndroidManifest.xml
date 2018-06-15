@@ -21,7 +21,7 @@
         <activity android:name=".Fragment.InternationalFragment" />
         <activity android:name=".Fragment.NationalFragment" />
         <activity android:name=".Fragment.InternationalDetailsFragment" />
-        <activity android:name=".Activity.NgoDetailsScreen" />
+        <activity android:name=".Fragment.NgoDetailsFragment" />
         <activity android:name=".Activity.CvTipsDetailsScreen" />
         <activity android:name=".Activity.RegisterScreen" />
     </application>

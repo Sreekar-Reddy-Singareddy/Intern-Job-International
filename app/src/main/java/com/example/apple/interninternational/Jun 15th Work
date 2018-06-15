@@ -1,0 +1,16 @@
+TO DO TASKS:
++ Create UI for the ngo list
++ Create xml layout that holds recycler view for displaying the list of ngos
++ Create source java file to control this recycler view fragment
++ Create adapter file to control the behaviour and data of the recycler view
++ Create xml layout for group cell
++ Create xml layout for child cell
++ Create dialog boxes when the user clicks on the detailed address of the child view in ngos list
++ Create custom xml layout for the dialog box
++ Code and display the dummy text in the dialog box
+
+COMPLETELY WORKING:
+- Completed the working of expandable ngo list view
+- List expands and collapses flawlessly
+- UI flow of ngo screen is all done
+- Entire hierarchy of the ngo screen is finished

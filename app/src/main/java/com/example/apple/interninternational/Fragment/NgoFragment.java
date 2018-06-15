@@ -42,6 +42,9 @@ public class NgoFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.frag_ngo_screen_ngos_card) {
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "NGOs",Toast.LENGTH_SHORT).show();
+            NgosListFragment ngosListFragment = new NgosListFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,ngosListFragment).commit();
+
         }
         else if (v.getId() == R.id.frag_ngo_screen_skillsdev_card){
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "Skills Dev",Toast.LENGTH_SHORT).show();
