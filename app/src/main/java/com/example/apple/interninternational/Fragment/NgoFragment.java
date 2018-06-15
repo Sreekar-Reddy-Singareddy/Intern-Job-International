@@ -48,6 +48,8 @@ public class NgoFragment extends Fragment implements View.OnClickListener {
         }
         else if (v.getId() == R.id.frag_ngo_screen_skillsdev_card){
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "Skills Dev",Toast.LENGTH_SHORT).show();
+            SkillsDevFragment skillsDevFragment = new SkillsDevFragment();
+            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,skillsDevFragment).commit();
         }
     }
 }

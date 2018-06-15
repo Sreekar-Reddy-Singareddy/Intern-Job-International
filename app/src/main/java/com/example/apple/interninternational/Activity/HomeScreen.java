@@ -1,6 +1,10 @@
 package com.example.apple.interninternational.Activity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.apple.interninternational.Adapters.SkillsListAdapter;
 import com.example.apple.interninternational.Fragment.CompaniesFragment;
 import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
@@ -39,6 +44,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     private DrawerLayout layout;
 
     public void initialiseUi() {
+        System.out.println("Main Ref: "+this);
         navigationView = (NavigationView) findViewById(R.id.act_home_screen_nv);
         toolbar = (Toolbar) findViewById(R.id.act_home_screen_toolbar);
         layout = (DrawerLayout) findViewById(R.id.act_home_screen_drawer_layout);
@@ -122,5 +128,36 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     @Override
     public void onBackPressed() {
         Toast.makeText(this,"Back",Toast.LENGTH_LONG).show();
+    }
+
+
+    public static void makeACall(String phoneNumber){
+        Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+phoneNumber));
+        // Check the call permission
+        System.out.println("Static Ref: "+HOMESCREEN_REFERENCE);
+        System.out.println("Permission Code: "+HomeScreen.HOMESCREEN_REFERENCE.checkSelfPermission(Manifest.permission.CALL_PHONE));
+        if (HomeScreen.HOMESCREEN_REFERENCE.checkSelfPermission(Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_DENIED){
+            // Permission is not given
+            System.out.println("Perimission Denied");
+            HomeScreen.HOMESCREEN_REFERENCE.requestPermissions(new String [] {Manifest.permission.CALL_PHONE},1234);
+        }
+        else {
+            // Permission is given
+            System.out.println("Perimission Granted");
+            System.out.println("URI Data: "+callIntent.getData());
+            HOMESCREEN_REFERENCE.startActivity(callIntent);
+        }
+    }
+
+    /**
+     * Result of the requested permission
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 1234 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+            Toast.makeText(this, "Permission Granted",Toast.LENGTH_SHORT).show();
+            makeACall(SkillsListAdapter.phoneNumber);
+        }
     }
 }

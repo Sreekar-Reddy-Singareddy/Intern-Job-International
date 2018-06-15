@@ -8,9 +8,18 @@ TO DO TASKS:
 + Create dialog boxes when the user clicks on the detailed address of the child view in ngos list
 + Create custom xml layout for the dialog box
 + Code and display the dummy text in the dialog box
++ Create UI for the skills deve screen
++ Creata an xml to display the list of skills - expandable list
++ Create 2 xml layouts for each cell of the above list - group cell and child cell
++ Create a java source file to control the list fragment
++ Create xml layout for the custom dialog boxs
++ Create and call intent to call the number given in the string
 
 COMPLETELY WORKING:
 - Completed the working of expandable ngo list view
 - List expands and collapses flawlessly
 - UI flow of ngo screen is all done
 - Entire hierarchy of the ngo screen is finished
+- Completed the working of expandable skills list view
+- UI flow fully done for skills dev as of now
+- When phone number is clicked on the skills item, it makes a call to that number
