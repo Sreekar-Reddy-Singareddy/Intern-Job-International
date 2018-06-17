@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.apple.interninternational.Adapters.SkillsListAdapter;
+import com.example.apple.interninternational.Fragment.BlogFragment;
 import com.example.apple.interninternational.Fragment.CompaniesFragment;
 import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
@@ -97,6 +98,13 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "NGO screen",Toast.LENGTH_SHORT).show();
             NgoFragment ngoFragment = new NgoFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,ngoFragment).commit();
+        }
+        else if (item.getItemId() == R.id.home_screen_menu_blog_item) {
+            // Navigate the user to the blogs list screen
+            getSupportActionBar().invalidateOptionsMenu();
+            Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "Blog list screen",Toast.LENGTH_SHORT).show();
+            BlogFragment blogFragment = new BlogFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,blogFragment).commit();
         }
         layout.closeDrawer(GravityCompat.START);
         return false;

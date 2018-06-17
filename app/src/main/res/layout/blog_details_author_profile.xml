@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/blog_author_details_riv_dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/china_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="15dp"
+        app:srcCompat="@drawable/india" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/blog_author_details_riv_dp"
+        app:layout_constraintLeft_toRightOf="@id/blog_author_details_riv_dp"
+        app:layout_constraintTop_toTopOf="@+id/blog_author_details_riv_dp">
+
+        <TextView
+            android:id="@+id/blog_author_details_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sri Harsha Rama"
+            android:textColor="#6d5023"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <TextView
+            android:id="@+id/blog_author_details_tv_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Founder N CEO"
+            android:textColor="#6d5023"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="300dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blog_author_details_tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sri Harsha Ramayanam is a Tech N Social Entrepreneur based in India. He is the founder N CEO of Intern N Job International, India's largest online platform that brings together thousands of students, business giants and education ecosystems together to improve practical exposure among students. With an experience of working in 3 countries, he has a vision of making the world, a large pool of talented individuals!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blog_author_details_riv_dp" />
+</android.support.constraint.ConstraintLayout>

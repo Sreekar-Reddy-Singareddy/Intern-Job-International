@@ -1,0 +1,21 @@
+TO DO TASKS:
++ Create xml file for the blog screen
++ Xml must contain a recycler view which displays the list of available blogs
++ Each blog cell in the recycler view must come from a custom layout cell - new table cell xml layout
++ When each blog is clicked the user is taken to the next detailed screen
++ The detailed screen must have another xml layout file to show the details of the blog selected
++ Create two source java files to control the behaviour of both the xml files above
++ In the detailed screen, there must be a custom tool bar which contains menu item to leave a comment
++ It should also contain a button from which the user can leave a comment
++ The information of the author must be shown on a floating dialog box when clicked on a Floating action button
++ The floating action button must contain the profile picture of the author
++ The dialog box must also have a custom layout xml file to show the information about the author
+
+COMPLETELY WORKING:
+- Navigates the user to the list of blogs when clicked on blogs item in the nav drawer
+- List og blogs successfully displays all the blogs available
+- Each item contains a button on clicking which the detailed screen will be displayed
+- The detailed screen will have all the details about the blog
+- User can even click a button and leave a comment from there
+- User can click the dp of the author and see the details of the author profile
+- The details are shown in a new flaoting dialog box
