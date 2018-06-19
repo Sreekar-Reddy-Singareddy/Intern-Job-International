@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/about_list_cell_iv_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/china_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/about_list_cell_iv_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/about_list_cell_iv_image"
+        app:layout_constraintTop_toTopOf="@+id/about_list_cell_iv_image">
+
+        <TextView
+            android:id="@+id/about_list_cell_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keerthi Chand Reddy. S"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/about_list_cell_tv_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Founder n Managing Director"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

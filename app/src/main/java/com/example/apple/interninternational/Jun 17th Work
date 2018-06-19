@@ -10,6 +10,14 @@ TO DO TASKS:
 + The information of the author must be shown on a floating dialog box when clicked on a Floating action button
 + The floating action button must contain the profile picture of the author
 + The dialog box must also have a custom layout xml file to show the information about the author
++ UI for the abut us screen
++ Three profiles will be displayed in simple list view
++ xml layout for displaying the profiles
++ xml layout for each of the profile prototype
++ java source file to control the list behaviour
++ adapter class to control the list and its data
+
+
 
 COMPLETELY WORKING:
 - Navigates the user to the list of blogs when clicked on blogs item in the nav drawer
@@ -19,3 +27,6 @@ COMPLETELY WORKING:
 - User can even click a button and leave a comment from there
 - User can click the dp of the author and see the details of the author profile
 - The details are shown in a new flaoting dialog box
+- Complete UI has been done for the about us screen
+- The screen displays list of founders and other contact details when clicked on the contact menu item
+- When a contact number is selected, the user can make a call to the selected number

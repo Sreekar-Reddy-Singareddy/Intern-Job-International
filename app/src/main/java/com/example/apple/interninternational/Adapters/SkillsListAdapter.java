@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.example.apple.interninternational.Activity.HomeScreen;
 import com.example.apple.interninternational.R;
+import com.example.apple.interninternational.Utilities.ProjectUtils;
 
 import java.security.Permission;
 
@@ -165,19 +166,19 @@ public class SkillsListAdapter extends BaseExpandableListAdapter {
         });
         /**
          * This is called only when the textview is clicked on the child view
-         * This will trigger the phone app from the which the user can directly call the number
+         * This will trigger the phone app from the which the user can directly call_icon the number
          */
         spocContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 /**
-                 * Create an intent to call the phone app and make a call
+                 * Create an intent to call_icon the phone app and make a call_icon
                  */
                 // Format the number in indian style
                 String contactString = spocContact.getText().toString();
-                phoneNumber = PhoneNumberUtils.formatNumber(contactString,"IN");
+                phoneNumber = ProjectUtils.formatIndianNumber(contactString);
                 System.out.println("Real Contact: "+phoneNumber);
-                HomeScreen.makeACall(phoneNumber);
+                ProjectUtils.makeACall(phoneNumber);
             }
         });
         TextView dummyView = new TextView(context);

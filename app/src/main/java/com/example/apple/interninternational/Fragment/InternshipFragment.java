@@ -26,7 +26,7 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
     }
 
     /**
-     * This is the call back method called by the android system
+     * This is the call_icon back method called by the android system
      * in order to draw the view of this fragment.
      * @param inflater: helps in inflating the fragment
      * @param container: container of the fragment
