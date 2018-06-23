@@ -7,29 +7,36 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/company_cell_riv_image"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
-        app:riv_corner_radius_top_left="10dp"
-        app:riv_corner_radius_top_right="10dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/china_two"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_corner_radius_top_right="0dp" />
 
     <TextView
         android:id="@+id/company_cell_tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#aa6c1b91"
-        android:textColor="#ffffff"
-        android:text="TextView"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#aae8b145"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="Reliance"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/company_cell_riv_image"
+        android:textColor="#634710"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintTop_toBottomOf="@id/company_cell_riv_image" />
 
 </android.support.constraint.ConstraintLayout>

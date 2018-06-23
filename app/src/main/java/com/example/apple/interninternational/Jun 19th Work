@@ -1,0 +1,12 @@
+TO DO TASKS:
+- UI for the cv tips screen
+- Display the list of available services provided
+- Add a menu item which lets the user download sample resume
+- Create xml layout file for the fragment
+- Create source file to control the fragment
+- Create a menu xml layout with one item in it
+
+COMPLETELY WORKING:
+- Completed the UI for the cv tips screen to display the list of services provided
+- Provided floating action button which lets the user customise and create their resume
+

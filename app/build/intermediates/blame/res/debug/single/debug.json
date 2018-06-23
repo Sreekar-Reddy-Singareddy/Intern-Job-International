@@ -64,6 +64,10 @@
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_nav_back.xml.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/nav_back.xml"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout_frag_companies_screen.xml.flat",
         "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout/frag_companies_screen.xml"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_create_resume.png.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/create_resume.png"
     },
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_call_icon.png.flat",
@@ -316,6 +324,10 @@
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_cover_letter.png.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/cover_letter.png"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/layout/abc_action_mode_bar.xml"
     },
@@ -406,10 +418,6 @@
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5470ffe7693f9d627d065308ad07cf44/res/anim/design_snackbar_out.xml"
-    },
-    {
-        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout_act_cvtips_screen.xml.flat",
-        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout/act_cvtips_screen.xml"
     },
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -740,10 +748,6 @@
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout-land_act_cvtips_screen.xml.flat",
-        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout-land/act_cvtips_screen.xml"
-    },
-    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/97dad5a05b971f005a17d74fe389ecf5/res/drawable/notification_bg_low.xml"
     },
@@ -904,6 +908,10 @@
         "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout/custom_location_cell.xml"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_cv.png.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/cv.png"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -1024,6 +1032,10 @@
         "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout/frag_skills_dev_list.xml"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout-land_frag_cvtips_screen.xml.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout-land/frag_cvtips_screen.xml"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/color/abc_hint_foreground_material_light.xml"
     },
@@ -1078,6 +1090,10 @@
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/97dad5a05b971f005a17d74fe389ecf5/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_home_nav_drawer_icon.xml.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/home_nav_drawer_icon.xml"
     },
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_india.jpg.flat",
@@ -1380,6 +1396,10 @@
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_resume.png.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/resume.png"
+    },
+    {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf0961120af2e50f12f120a6e06bbe13/res/layout/notification_media_action.xml"
     },
@@ -1662,6 +1682,10 @@
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout_frag_cvtips_screen.xml.flat",
+        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/layout/frag_cvtips_screen.xml"
     },
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
@@ -2010,10 +2034,6 @@
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a079595610b1c76ab6d51d5818b5fc84/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/drawable_home_nav_drawer_icon.png.flat",
-        "source": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/src/main/res/drawable/home_nav_drawer_icon.png"
     },
     {
         "merged": "/Users/apple/Desktop/Sreekar Drive/Android/Projects/Intern-Job-International/app/build/intermediates/res/merged/debug/layout-land_act_register_screen.xml.flat",

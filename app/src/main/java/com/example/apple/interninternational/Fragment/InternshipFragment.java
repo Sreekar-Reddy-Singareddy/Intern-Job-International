@@ -19,13 +19,6 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
     private View fragmentMainView;
 
     /**
-     * Constructor for the fragment
-     */
-    public InternshipFragment() {
-
-    }
-
-    /**
      * This is the call_icon back method called by the android system
      * in order to draw the view of this fragment.
      * @param inflater: helps in inflating the fragment
@@ -62,13 +55,12 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
         if (v.getId() == R.id.frag_internship_screen_inter_card) {
             Toast.makeText(getContext(),"International Card",Toast.LENGTH_SHORT).show();
             InternationalFragment internationalFragment = new InternationalFragment();
-            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,internationalFragment).commit();
+            HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,internationalFragment,"ShowInternationalFrag",true);
         }
         else if (v.getId() == R.id.frag_internship_screen_nation_card) {
             Toast.makeText(getContext(),"National Card",Toast.LENGTH_SHORT).show();
-            // TODO: Load the national fragment
             NationalFragment nationalFragment = new NationalFragment();
-            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,nationalFragment).commit();
+            HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,nationalFragment,"ShowNationalFrag",true);
         }
     }
 

@@ -97,7 +97,7 @@ public class OpportunitiesListAdapter extends RecyclerView.Adapter<Opportunities
         public void onClick(View v) {
             Toast.makeText(context,"Clicked"+name.getText().toString(),Toast.LENGTH_SHORT).show();
             OpportunityDetailsFragment opportunityDetailsFragment = new OpportunityDetailsFragment();
-            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,opportunityDetailsFragment).commit();
+            HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,opportunityDetailsFragment,"ShowSelectedOppDetails",true);
         }
     }
 }

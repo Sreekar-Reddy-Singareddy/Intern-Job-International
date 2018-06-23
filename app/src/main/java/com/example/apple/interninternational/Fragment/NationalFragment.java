@@ -43,9 +43,10 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
     }
 
     private void initialiseUi() {
+        Toast.makeText(getContext(),"Init Nat",Toast.LENGTH_SHORT).show();
         viewPager = (ViewPager)mainView.findViewById(R.id.frag_national_screen_vp_pager);
         // Create adapter for pager and set it
-        FilterInputsPagerAdapter adapter = new FilterInputsPagerAdapter(HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager(),3);
+        FilterInputsPagerAdapter adapter = new FilterInputsPagerAdapter(getChildFragmentManager(),3);
         viewPager.setAdapter(adapter);
         // Create animation for pager and set it
         DepthPageTransformer depthPageTransformer = new DepthPageTransformer();
@@ -79,7 +80,7 @@ public class NationalFragment extends Fragment implements View.OnClickListener {
             // TODO: Take the user given inputs and navigate them to opportunites list
             Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(),"Apply",Toast.LENGTH_SHORT).show();
             OpportunityFragment opportunityFragment = new OpportunityFragment();
-            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,opportunityFragment).commit();
+            HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,opportunityFragment,"ShowOppList",true);
         }
         else if (v.getId() == next.getId()){
             // TODO: Flip the page in the page viewer by 1

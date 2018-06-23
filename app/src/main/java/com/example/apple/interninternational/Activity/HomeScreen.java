@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -27,6 +28,7 @@ import com.example.apple.interninternational.Adapters.SkillsListAdapter;
 import com.example.apple.interninternational.Fragment.AboutFragment;
 import com.example.apple.interninternational.Fragment.BlogFragment;
 import com.example.apple.interninternational.Fragment.CompaniesFragment;
+import com.example.apple.interninternational.Fragment.CvtipsFragment;
 import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
 import com.example.apple.interninternational.Fragment.NgoFragment;
@@ -50,6 +52,13 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
      * Updated in this class itself
      */
     public static boolean shouldShowAddressIcon = false;
+    /**
+     * This integer count tells how much deeper the navigation has gone into
+     * For every fragment that is replaced or added, the count is increased (developer's decision based)
+     * 0: There is no back navigation, so display drawer icon
+     * 1: There is one back navigation, so display back icon
+     */
+    public static int backStackCount = 0;
 
     // UI Properties
     private NavigationView navigationView;
@@ -127,6 +136,13 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             AboutFragment aboutFragment = new AboutFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,aboutFragment).commit();
         }
+        else if (item.getItemId() == R.id.home_screen_menu_cvtips_item){
+            // Navigate the user to the about us screen where all the profiles are displayed
+            getSupportActionBar().invalidateOptionsMenu();
+            Toast.makeText(HomeScreen.HOMESCREEN_REFERENCE.getBaseContext(), "CV Tips screen",Toast.LENGTH_SHORT).show();
+            CvtipsFragment cvtipsFragment = new CvtipsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,cvtipsFragment).commit();
+        }
         layout.closeDrawer(GravityCompat.START);
         return false;
     }
@@ -152,7 +168,20 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     public boolean onOptionsItemSelected(MenuItem item) {
         // Check which item is selected and perform action appropriately
         if (item.getItemId() == android.R.id.home) {
-            layout.openDrawer(GravityCompat.START);
+            // Differentiate which action the home up button should take
+            if (backStackCount == 0) {
+                // Show the nav drawer
+                layout.openDrawer(GravityCompat.START);
+            }
+            else {
+                // Go back to previous screen
+                getSupportFragmentManager().popBackStackImmediate();
+                backStackCount -= 1;
+                // Check the count and update the icon accordingly
+                if (backStackCount == 0){
+                    actionBar.setHomeAsUpIndicator(R.drawable.home_nav_drawer_icon);
+                }
+            }
         }
         else if (item.getItemId() == R.id.download_icon_menu_download_item){
             Toast.makeText(this,"Downloading...",Toast.LENGTH_LONG).show();
@@ -253,6 +282,23 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         if (requestCode == 1234 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
             Toast.makeText(this, "Permission Granted",Toast.LENGTH_SHORT).show();
             ProjectUtils.makeACall(SkillsListAdapter.phoneNumber);
+        }
+    }
+
+    public static void customReplaceFragment(int id, Fragment fragment, String transationName, boolean shouldNavBack){
+        HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().
+                beginTransaction().
+                replace(id,fragment).
+                addToBackStack(transationName).
+                commit();
+        if (shouldNavBack) {
+            // User should be able to navigate back from this transaction
+            // Hence increase the stack count by 1
+            backStackCount += 1;
+        }
+        if (backStackCount > 0) {
+            HomeScreen.HOMESCREEN_REFERENCE.
+                    getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_back);
         }
     }
 }

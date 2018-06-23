@@ -50,7 +50,8 @@ public class InternationalFragment extends Fragment implements View.OnClickListe
      */
     @Override
     public void onClick(View v) {
-        HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,new InternationalDetailsFragment()).commit();
+        InternationalDetailsFragment internationalDetailsFragment = new InternationalDetailsFragment();
+        HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,internationalDetailsFragment,"ShowInternationalDetails",true);
         switch (v.getId()) {
             case R.id.frag_international_screen_cv_india:
                 Toast.makeText(getContext(),"India",Toast.LENGTH_SHORT).show();

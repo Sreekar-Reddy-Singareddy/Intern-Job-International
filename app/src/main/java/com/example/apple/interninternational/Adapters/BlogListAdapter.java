@@ -47,7 +47,7 @@ public class BlogListAdapter extends RecyclerView.Adapter<BlogListAdapter.BlogLi
             Toast.makeText(context,"Reading more...",Toast.LENGTH_SHORT).show();
             // Take the user to the next detailed screev
             BlogDetailsFrag blogDetailsFrag = new BlogDetailsFrag();
-            HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager().beginTransaction().replace(R.id.act_home_screen_fl_frag,blogDetailsFrag).commit();
+            HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,blogDetailsFrag,"ShowBlogDetails",true);
         }
     }
 

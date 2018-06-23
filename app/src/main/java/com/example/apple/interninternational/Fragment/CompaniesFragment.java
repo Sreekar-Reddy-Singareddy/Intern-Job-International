@@ -34,7 +34,7 @@ public class CompaniesFragment extends Fragment {
         CompaniesAdapter adapter = new CompaniesAdapter(HomeScreen.HOMESCREEN_REFERENCE,HomeScreen.HOMESCREEN_REFERENCE.getLayoutInflater());
         companiesCollection.setAdapter(adapter);
         // Create and set a layout manager for the company
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(HomeScreen.HOMESCREEN_REFERENCE,3);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(HomeScreen.HOMESCREEN_REFERENCE,2);
         companiesCollection.setLayoutManager(gridLayoutManager);
 
     }
