@@ -28,3 +28,7 @@ WORK PLAN:
 
 Work Done:
 UI is all done for the login screen. The flow seems to be working fine as of now.
+Created a custom login loader which takes care of database interaction.
+Passing some input data, in the form of bundle, to the login loader.
+Successfully made connection to the MySQL server and getting the data back to the client.
+As of now, the connection sends some dummy data, just to verify if the code works fine. It works fine!
