@@ -1,0 +1,30 @@
+TARGET FOR TODAY:
+Finish the entire work flow of the Login, Companies module. This includes the DB interaction as well.
+
+
+
+
+
+WORK PLAN:
+- User will be asked to take some action regarding login in one standalone activity
+- User can choose either to login, register or skip
+- On choosing either of the above, they will be taken to the main screen (which we already have designed)
+- Based on the choice made in the previous activity, few things will be changed dynamically in the navigation drawer
+- Possible flows
+    LOGIN - REGISTER - HOMESCREEN
+    LOGIN - HOMESCREEN (with login validations)
+    LOGIN - HOMESCREEN (without validations)
+- There must be two types of communications with MySQL server
+    Fetch - for login
+    Insert - for register
+- Both the above communications must happen in background and we will choose AsyncTaskLoader for this purpose. This is because loaders are
+  immune to configuration changes such as orientation changes
+- In case of login, the inputs will be username and password. Based on these, I need an output whether they are TRUE or FASLE.
+
+
+
+
+
+
+Work Done:
+UI is all done for the login screen. The flow seems to be working fine as of now.

@@ -49,6 +49,7 @@
                 android:paddingTop="@dimen/frag_intership_screen_text_padding"
                 android:text="@string/international_textview"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
@@ -99,6 +100,7 @@
                 android:paddingTop="@dimen/frag_intership_screen_text_padding"
                 android:text="@string/national_textview"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="normal" />
 

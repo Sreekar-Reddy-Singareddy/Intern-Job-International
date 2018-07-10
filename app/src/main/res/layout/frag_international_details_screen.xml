@@ -28,7 +28,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:background="#62f7aa"
+                android:background="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -44,6 +44,7 @@
                 android:layout_marginTop="8dp"
                 android:text="HellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHellloooooooooooHelllooooooooooo"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/frag_inter_details_screen_vp_pager" />
@@ -55,7 +56,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
-                android:background="#62f7aa"
+                android:background="#000000"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/frag_inter_details_screen_tv_description">

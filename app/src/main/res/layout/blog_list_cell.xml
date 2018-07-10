@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:text="Title of the blog post"
         android:textAlignment="textStart"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +30,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Around 75% of college students, at some point, work in an internship. These experiences can be tremendously valuable, providing young workers the opportunity to build skills for their resumes and meet people who are working in their preferred industry"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/blog_list_cell_tv_title" />
@@ -41,7 +43,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         android:text="Read More"
-        android:textColor="#825d25"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/blog_list_cell_tv_desc" />
 </android.support.constraint.ConstraintLayout>

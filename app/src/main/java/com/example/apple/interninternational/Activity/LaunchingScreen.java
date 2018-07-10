@@ -19,7 +19,7 @@ public class LaunchingScreen extends AppCompatActivity {
             @Override
             public void run() {
                 // Lanuch the home screen after 2 seconds
-                Intent homeScreenIntent = new Intent(LaunchingScreen.this,HomeScreen.class);
+                Intent homeScreenIntent = new Intent(LaunchingScreen.this,LoginScreen.class);
                 startActivity(homeScreenIntent);
             }
         },1000);

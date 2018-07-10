@@ -82,6 +82,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_home_screen);
+        System.out.println("The bundle sent from login screen is: "+getIntent().getIntExtra("UserChoice",-1));
         HOMESCREEN_REFERENCE = this;
         // Animation for screen navigation
         overridePendingTransition(R.anim.enter_right,R.anim.exit_left);

@@ -1,8 +1,3 @@
 Today's Work:
 
-Created one custom method inside the home screen activity.
-Developer can now use the method to replace fragments.
-Provided ability for the user to navigate back from the current fragment.
-Created 1 extra variable of int type in home screen for the above purpose.
-Navigating back from back stack works perfectly fine.
-Action bar icons changing appropriately based on the screen shown. 
+Created one custom method inside the home screen activity. Developer can now use the method to replace fragments. Provided ability for the user to navigate back from the current fragment. Created 1 extra variable of int type in home screen for the above purpose. Navigating back from back stack works perfectly fine. Action bar icons changing appropriately based on the screen shown.
