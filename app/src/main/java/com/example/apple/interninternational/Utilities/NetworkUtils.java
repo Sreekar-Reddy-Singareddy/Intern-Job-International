@@ -2,6 +2,10 @@ package com.example.apple.interninternational.Utilities;
 
 import android.util.Log;
 
+import static com.example.apple.interninternational.Utilities.DataBaseConstants.PAIR_SEPERATOR;
+import static com.example.apple.interninternational.Utilities.DataBaseConstants.Users;
+import static com.example.apple.interninternational.Utilities.DataBaseConstants.VALUE_SEPERATOR;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,13 +20,17 @@ import java.net.URL;
  */
 public class NetworkUtils {
 
+    private static String USERNAME;
+    private static String PASSWORD;
+
     /**
      * This is a static method that takes string URL
      * and returns the JSON string back to the requester
      * @param url: path for the resource
      * @return
      */
-    public static String fetchJsonResponseFrom(String url) {
+    public static String fetchJsonResponseFrom(String url, String username, String password) {
+        USERNAME = username; PASSWORD = password;
         Log.i("NetworkUtils", "fetchJsonResponseFrom: Inside");
         URL mainUrl = null;
         InputStream connectionResponse = null;
@@ -79,6 +87,15 @@ public class NetworkUtils {
         InputStream connectionResponse = null;
         // If the connection is not null, start the connection
         if (connection != null) {
+            connection.setRequestMethod("POST");
+            String userCredentialsData =
+                    Users.COL_EMAIL + VALUE_SEPERATOR + USERNAME +
+                    PAIR_SEPERATOR +
+                    Users.COL_PASSWORD + VALUE_SEPERATOR + PASSWORD;
+            Log.i("ResponseData", "makeConnectionFromUrl: response data - "+userCredentialsData);
+            byte [] reqData = userCredentialsData.getBytes();
+            connection.getOutputStream().write(reqData);
+            connection.getOutputStream().close();
             connection.connect();
             connectionResponse = connection.getInputStream();
         }

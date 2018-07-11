@@ -38,14 +38,41 @@ public class LoginLoader extends AsyncTaskLoader<Boolean> {
         // TODO: Interact with DB and decide what to return
         Log.i("LoginLoader", "loadInBackground: Username: "+inputData.getString("Username"));
         Log.i("LoginLoader", "loadInBackground: Password: "+inputData.getString("Password"));
-        String result = NetworkUtils.fetchJsonResponseFrom("http://192.168.43.165:8081/");
+        String result = NetworkUtils.fetchJsonResponseFrom("http://192.168.43.165:8081/",this.username,this.password);
         Log.i("Server Response", "loadInBackground: Result: "+result);
-        return false;
+        // Check the result and decide whether user exists or not
+        try {
+            if (Integer.parseInt(result) == 0){
+                // User does not exist
+                return false;
+            }
+            else if (Integer.parseInt(result) == 1) {
+                // User exists
+                return true;
+            }
+            else {
+                // Unexpected
+                throw new Exception("Some mal functioning happening!!!!");
+            }
+        }
+        catch (Exception e) {
+            // Some exception occured, so handle it and return false
+            Log.i("LoginLoader", "loadInBackground: "+e.getMessage());
+            return false;
+        }
     }
 
     @Override
     protected Boolean onLoadInBackground() {
         Log.i("LoginLoader", "onLoadInBackground: Inside");
         return super.onLoadInBackground();
+    }
+
+    public Bundle getInputData() {
+        return inputData;
+    }
+
+    public void setInputData(Bundle inputData) {
+        this.inputData = inputData;
     }
 }

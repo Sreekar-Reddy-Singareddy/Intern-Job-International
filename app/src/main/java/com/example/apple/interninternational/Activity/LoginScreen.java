@@ -3,17 +3,20 @@ package com.example.apple.interninternational.Activity;
 
 import android.content.Intent;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.content.AsyncTaskLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.apple.interninternational.R;
 import com.example.apple.interninternational.Services.LoginLoader;
+import com.example.apple.interninternational.Validations.LoginValidation;
 
 public class LoginScreen extends AppCompatActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks<Boolean> {
 
@@ -25,8 +28,13 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     private static int LOGIN = 1;
     private static int REGISTER = 2;
 
+    // UI properties
     private Button login;
     private TextView signUp;
+    private EditText username, password;
+
+    // Global intent for HomeScreen
+    private Intent homeIntent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +43,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         // Animation for screen navigation
         overridePendingTransition(R.anim.enter_right,R.anim.exit_left);
         initialiseUi();
+        homeIntent = new Intent(this,HomeScreen.class);
     }
 
     /**
@@ -45,6 +54,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         login.setOnClickListener(this);
         signUp = (TextView) findViewById(R.id.act_login_screen_tv_signup);
         signUp.setOnClickListener(this);
+        username = (EditText) findViewById(R.id.act_login_screen_et_username);
+        password = (EditText) findViewById(R.id.act_login_screen_et_password);
     }
 
     /**
@@ -54,27 +65,53 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
      */
     @Override
     public void onClick(View v) {
-        // Intent to load the next activity - HomeScreen
-        Intent homeScreenIntent = new Intent(this,HomeScreen.class);
         if (v.getId() == login.getId()) {
-            // TODO: Logic to validate the user credentials
-            Toast.makeText(this, "Login verifying...",Toast.LENGTH_SHORT).show();
-            // Put some extra data in the intent for the reciever purpose
-            homeScreenIntent.putExtra("Username","XYZ");
-            homeScreenIntent.putExtra("Password","ABC");
-            homeScreenIntent.putExtra("UserChoice",LOGIN);
+            homeIntent.putExtra("UserChoice",LOGIN);
+            // Validate fields before proceeding
+            if (!validateLoginCredits()){
+                return;
+            }
             // Create a bundle of data as input for the loader
+            // This will send the loader bundle with user given input credentials
             Bundle loaderInputData = new Bundle();
-            loaderInputData.putString("Username","Sreekar Reddy");
-            loaderInputData.putString("Password","gopiusha");
+            loaderInputData.putString("Username",this.username.getText().toString().toLowerCase());
+            loaderInputData.putString("Password",this.password.getText().toString());
+            // Check if the loader already exists of type LoginLoader
+            Loader loader = getSupportLoaderManager().getLoader(1);
+            if (loader != null){
+                // Loader already exists, so update the bundle
+                getSupportLoaderManager().restartLoader(1,loaderInputData,this);
+            }
             getSupportLoaderManager().initLoader(1,loaderInputData,this).forceLoad();
+            login.setEnabled(false);
         }
         else if (v.getId() == signUp.getId()) {
             // TODO: Logic to collect and insert user inputs and insert in database
             Toast.makeText(this, "Sign up loading...",Toast.LENGTH_SHORT).show();
-            homeScreenIntent.putExtra("UserChoice",REGISTER);
+            homeIntent.putExtra("UserChoice",REGISTER);
         }
         // Loads the next activity
+    }
+
+    /**
+     * This method validates the user inputs and gives apt messages
+     * Checks for empty fields
+     * Checks for proper username
+     * @return: true if all validations pass, else false
+     */
+    private boolean validateLoginCredits() {
+        // Validate all the fields first and then proceed
+        if (this.username.getText().toString().isEmpty() || this.password.getText().toString().isEmpty()) {
+            // Empty fields found
+            Toast.makeText(this,"Enter All Fields",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!LoginValidation.validateEmailUsername(this.username.getText().toString())) {
+            // Invalid email id format
+            Toast.makeText(this,"Invalid Username",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -101,6 +138,18 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         Log.i("LoginScreen", "onLoadFinished: Inside");
         Log.i("Data", "onLoadFinished: "+data);
         Log.i("LoginScreen", "onLoadFinished: runs on thread - "+Thread.currentThread());
+        // Check the result data and act accordingly
+        if (data) {
+            Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show();
+            // Navigate to next screen
+            startActivity(homeIntent);
+        }
+        else {
+            Toast.makeText(this,"Login Failure",Toast.LENGTH_SHORT).show();
+        }
+        // Once done with the loader, reset it
+        loader.reset();
+        login.setEnabled(true);
     }
 
     /**
