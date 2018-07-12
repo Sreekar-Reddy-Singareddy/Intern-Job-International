@@ -5,6 +5,12 @@ public class Login {
     private String email;
     private String nrml_pwd;
 
+    public Login(String name, String email, String nrml_pwd) {
+        this.name = name;
+        this.email = email;
+        this.nrml_pwd = nrml_pwd;
+    }
+
     public String getName() {
         return name;
     }

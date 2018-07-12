@@ -41,7 +41,9 @@ public class LoginLoader extends AsyncTaskLoader<Boolean> {
         // TODO: Interact with DB and decide what to return
         Log.i("LoginLoader", "loadInBackground: Username: "+inputData.getString("Username"));
         Log.i("LoginLoader", "loadInBackground: Password: "+inputData.getString("Password"));
-        String result = NetworkUtils.fetchJsonResponseFrom("http://192.168.43.165:8081/",this.username,this.password);
+        String result = NetworkUtils.fetchJsonResponseFrom(
+                "http://192.168.43.165:8081/",
+                new Login(null,this.username,this.password));
         Log.i("Server Response", "loadInBackground: Result: "+result);
         // Check the result and decide whether user exists or not
         try {

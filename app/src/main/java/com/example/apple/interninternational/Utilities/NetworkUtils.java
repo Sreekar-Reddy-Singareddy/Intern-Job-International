@@ -2,6 +2,10 @@ package com.example.apple.interninternational.Utilities;
 
 import android.util.Log;
 
+import com.example.apple.interninternational.Beans.Login;
+import com.example.apple.interninternational.Beans.Register;
+
+import static android.provider.Telephony.Carriers.PASSWORD;
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.PAIR_SEPERATOR;
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.Users;
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.VALUE_SEPERATOR;
@@ -20,8 +24,7 @@ import java.net.URL;
  */
 public class NetworkUtils {
 
-    private static String USERNAME;
-    private static String PASSWORD;
+    private static Object REQUEST_DATA;
 
     /**
      * This is a static method that takes string URL
@@ -29,8 +32,8 @@ public class NetworkUtils {
      * @param url: path for the resource
      * @return
      */
-    public static String fetchJsonResponseFrom(String url, String username, String password) {
-        USERNAME = username; PASSWORD = password;
+    public static String fetchJsonResponseFrom(String url, Object requestData) {
+        REQUEST_DATA = requestData;
         Log.i("NetworkUtils", "fetchJsonResponseFrom: Inside");
         URL mainUrl = null;
         InputStream connectionResponse = null;
@@ -82,24 +85,57 @@ public class NetworkUtils {
      * @throws IOException
      */
     private static InputStream makeConnectionFromUrl(URL url) throws IOException {
+        String requestData = null;
         Log.i("NetworkUtils", "makeConnectionFromUrl: Inside");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         InputStream connectionResponse = null;
         // If the connection is not null, start the connection
-        if (connection != null) {
+        if (connection == null) {
+            return null;
+        }
+        // Check whether there is any data being posted to the server
+        if (REQUEST_DATA == null) {
+            // No data, so the method could be GET
+            connection.setRequestMethod("GET");
+        }
+        else {
+            // Data exists, so the method could be POST
             connection.setRequestMethod("POST");
-            String userCredentialsData =
-                    Users.COL_EMAIL + VALUE_SEPERATOR + USERNAME +
-                    PAIR_SEPERATOR +
-                    Users.COL_PASSWORD + VALUE_SEPERATOR + PASSWORD;
-            Log.i("ResponseData", "makeConnectionFromUrl: response data - "+userCredentialsData);
-            byte [] reqData = userCredentialsData.getBytes();
+            // Check the type of data and write query
+            requestData = getDataStringFor(REQUEST_DATA);
+            Log.i("ResponseData", "makeConnectionFromUrl: response data - "+requestData);
+            byte [] reqData = requestData.getBytes();
             connection.getOutputStream().write(reqData);
             connection.getOutputStream().close();
-            connection.connect();
-            connectionResponse = connection.getInputStream();
         }
+        connection.connect();
+        connectionResponse = connection.getInputStream();
         return connectionResponse;
+    }
+
+    /**
+     * This method checks the type of data sent.
+     * Based on this, the SQL query is made and returned to
+     * calling environment
+     * @return
+     */
+    private static String getDataStringFor(Object requestData) {
+        String finalRequestData = null;
+        if (requestData instanceof Login) {
+            // Data is of type Login.class
+            Login loginData = (Login) requestData;
+            finalRequestData =
+                    Users.COL_EMAIL + VALUE_SEPERATOR + loginData.getEmail() +
+                    PAIR_SEPERATOR +
+                    Users.COL_PASSWORD + VALUE_SEPERATOR + loginData.getNrml_pwd();
+            Log.i("LoginData", "giveQueryFor: Final Data - "+finalRequestData);
+        }
+        else if (requestData instanceof Register) {
+            // Data is of type Register.class
+            Register registerData = (Register) requestData;
+
+        }
+        return finalRequestData;
     }
 
     /**

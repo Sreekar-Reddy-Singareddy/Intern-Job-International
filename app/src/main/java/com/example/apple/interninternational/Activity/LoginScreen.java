@@ -96,6 +96,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
             // TODO: Logic to collect and insert user inputs and insert in database
             Toast.makeText(this, "Sign up loading...",Toast.LENGTH_SHORT).show();
             homeIntent.putExtra("UserChoice",REGISTER);
+            Intent registerIntent = new Intent(this,RegisterScreen.class);
+            startActivity(registerIntent);
         }
         // Loads the next activity
     }
