@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.apple.interninternational.Beans.Login;
 import com.example.apple.interninternational.R;
 import com.example.apple.interninternational.Services.LoginLoader;
 import com.example.apple.interninternational.Validations.LoginValidation;
@@ -27,6 +28,12 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     private static int SKIP_LOGIN = 0;
     private static int LOGIN = 1;
     private static int REGISTER = 2;
+
+    /**
+     * Static variables which hold basic user data
+     * like name, and emailid
+     */
+    public static Login CURRENT_USER;
 
     // UI properties
     private Button login;
@@ -142,6 +149,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         if (data) {
             Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show();
             // Navigate to next screen
+            homeIntent.putExtra("Name",CURRENT_USER.getName());
+            homeIntent.putExtra("Email",CURRENT_USER.getEmail());
             startActivity(homeIntent);
         }
         else {

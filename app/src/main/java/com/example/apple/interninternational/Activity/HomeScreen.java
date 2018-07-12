@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.apple.interninternational.Adapters.SkillsListAdapter;
@@ -34,6 +35,8 @@ import com.example.apple.interninternational.Fragment.InternshipFragment;
 import com.example.apple.interninternational.Fragment.NgoFragment;
 import com.example.apple.interninternational.R;
 import com.example.apple.interninternational.Utilities.ProjectUtils;
+
+import org.w3c.dom.Text;
 
 public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -65,6 +68,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     private Toolbar toolbar;
     private ActionBar actionBar;
     private DrawerLayout layout;
+    private TextView nameTextview, emailTextview;
 
     public void initialiseUi() {
         System.out.println("Main Ref: "+this);
@@ -76,13 +80,18 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         actionBar = getSupportActionBar();
         actionBar.setHomeAsUpIndicator(R.drawable.home_nav_drawer_icon);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        View headerView = navigationView.getHeaderView(0);
+        nameTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_title);
+        nameTextview.setText(getIntent().getStringExtra("Name"));
+        emailTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_subtitle);
+        emailTextview.setText(getIntent().getStringExtra("Email"));
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_home_screen);
-        System.out.println("The bundle sent from login screen is: "+getIntent().getIntExtra("UserChoice",-1));
+        System.out.println("The bundle sent from login screen is: "+getIntent().getStringExtra("Name"));
         HOMESCREEN_REFERENCE = this;
         // Animation for screen navigation
         overridePendingTransition(R.anim.enter_right,R.anim.exit_left);

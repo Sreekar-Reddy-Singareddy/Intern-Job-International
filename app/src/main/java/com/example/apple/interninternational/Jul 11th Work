@@ -1,4 +1,5 @@
 Created new class to hold the column names of various tables in the database.
 Modified the code in LoginLoader and LoginScreen to make the module work properly.
 As of now, login happens fine.
-User can now login using the registered credentials. All validations are done for the input fields.
+User can now login using the registered credentials.
+All validations are done for the input fields.

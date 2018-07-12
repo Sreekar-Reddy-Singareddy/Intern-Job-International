@@ -1,0 +1,5 @@
+TODO
++ Get the user data from the back end
++ Parse the obtanied JSON string into User bean
++ Use these properties in User bean in Login Screen to pass them to the Home Screen intent
++ Display these values in home screen's navigation drawer

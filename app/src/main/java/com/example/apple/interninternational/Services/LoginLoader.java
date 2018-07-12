@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.support.v4.content.AsyncTaskLoader;
 import android.util.Log;
 
+import com.example.apple.interninternational.Activity.LoginScreen;
+import com.example.apple.interninternational.Beans.Login;
 import com.example.apple.interninternational.Utilities.NetworkUtils;
+import com.google.gson.Gson;
 
 public class LoginLoader extends AsyncTaskLoader<Boolean> {
 
@@ -42,17 +45,16 @@ public class LoginLoader extends AsyncTaskLoader<Boolean> {
         Log.i("Server Response", "loadInBackground: Result: "+result);
         // Check the result and decide whether user exists or not
         try {
-            if (Integer.parseInt(result) == 0){
+            if (result.equals("")){
                 // User does not exist
                 return false;
             }
-            else if (Integer.parseInt(result) == 1) {
-                // User exists
-                return true;
-            }
             else {
-                // Unexpected
-                throw new Exception("Some mal functioning happening!!!!");
+                // User exists
+                // Convert the JSON String into User object
+                Gson gson = new Gson();
+                LoginScreen.CURRENT_USER = gson.fromJson(result, Login.class);
+                return true;
             }
         }
         catch (Exception e) {
