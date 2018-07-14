@@ -1,10 +1,12 @@
 package com.example.apple.interninternational.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -25,6 +27,7 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         setContentView(R.layout.act_register_screen);
         initialiseUi();
         registerBean = createRegisterBean();
@@ -59,6 +62,7 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
         registerBean.setMobile(this.mobile.getText().toString());
         registerBean.setPassword(this.password.getText().toString());
         registerBean.setVerifyPassword(this.verifyPassword.getText().toString());
+        registerBean.formatName();
         return registerBean;
     }
 
@@ -70,6 +74,7 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (v.getId() == register.getId()) {
             registerBean = createRegisterBean();
+            // Validate all the fields in register bean before doing anything with it
             String validateMessageToken = RegisterValidation.validateAll(registerBean);
             if (!displayAlertForInvalidInput(validateMessageToken)) {
                 // Atleast one validation has failed
@@ -107,9 +112,16 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
         // Data contains some acknowledgement message
         if (data.equals("Insert Success")) {
             // TODO: Logic
+            Toast.makeText(this,"User Registered",Toast.LENGTH_SHORT).show();
+            Intent homeIntent = new Intent(this, HomeScreen.class);
+            // Navigate to next screen
+            homeIntent.putExtra("Name",registerBean.getName());
+            homeIntent.putExtra("Email",registerBean.getEmail());
+            startActivity(homeIntent);
         }
         else if(data.equals("Insert Fail")) {
             // TODO: Logic
+            Toast.makeText(this,"Registration Failed. Server Issue!",Toast.LENGTH_SHORT).show();
         }
         else if (data.equals("User Exists")) {
             Toast.makeText(this,"User exists already!",Toast.LENGTH_SHORT).show();

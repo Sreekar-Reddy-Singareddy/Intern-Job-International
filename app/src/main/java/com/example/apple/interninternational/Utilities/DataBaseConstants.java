@@ -16,6 +16,8 @@ public class DataBaseConstants {
          */
         public static String COL_EMAIL = "email";
         public static String COL_PASSWORD = "nrml_pwd";
+        public static String COL_NAME = "name";
+        public static String COL_MOBILE = "mobile";
     }
 
 }

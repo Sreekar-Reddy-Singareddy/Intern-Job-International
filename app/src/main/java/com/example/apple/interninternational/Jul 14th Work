@@ -1,0 +1,3 @@
+TODO
++ Once validated, send the register bean to the network utils and get the resposne
++ Check the response and act accrodingly

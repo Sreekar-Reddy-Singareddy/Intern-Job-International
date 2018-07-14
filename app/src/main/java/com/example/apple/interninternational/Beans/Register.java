@@ -28,12 +28,21 @@ public class Register implements Parcelable{
                     this.lastName.trim().toLowerCase().substring(0,1).toUpperCase();
     }
 
+    public void formatName() {
+        if (this.firstName.isEmpty() || this.lastName.isEmpty()){
+            return;
+        }
+        this.name = this.firstName.substring(0,1).toUpperCase() + this.firstName.substring(1) +
+                " " +
+                this.lastName.substring(0,1).toUpperCase() + this.lastName.substring(1);
+    }
+
     public String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        this.firstName = firstName.trim().toLowerCase();
     }
 
     public String getLastName() {
@@ -41,7 +50,7 @@ public class Register implements Parcelable{
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        this.lastName = lastName.trim().toLowerCase();
     }
 
     public String getEmail() {
@@ -49,7 +58,7 @@ public class Register implements Parcelable{
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email = email.trim().toLowerCase();
     }
 
     public String getMobile() {

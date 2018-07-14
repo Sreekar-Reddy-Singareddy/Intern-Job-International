@@ -133,7 +133,15 @@ public class NetworkUtils {
         else if (requestData instanceof Register) {
             // Data is of type Register.class
             Register registerData = (Register) requestData;
-
+            finalRequestData =
+                            Users.COL_NAME + VALUE_SEPERATOR + registerData.getName() +
+                            PAIR_SEPERATOR +
+                            Users.COL_EMAIL + VALUE_SEPERATOR + registerData.getEmail() +
+                            PAIR_SEPERATOR +
+                            Users.COL_MOBILE + VALUE_SEPERATOR + registerData.getMobile() +
+                            PAIR_SEPERATOR +
+                            Users.COL_PASSWORD + VALUE_SEPERATOR + registerData.getPassword();
+            System.out.println("*****"+finalRequestData);
         }
         return finalRequestData;
     }

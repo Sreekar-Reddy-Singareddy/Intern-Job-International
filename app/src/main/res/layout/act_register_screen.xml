@@ -17,6 +17,7 @@
         android:ems="10"
         android:hint="First Name"
         android:inputType="textPersonName"
+        android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/act_register_screen_et_lastname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +33,7 @@
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/act_register_screen_et_firstname"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,6 +49,7 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act_register_screen_et_firstname" />
@@ -62,6 +65,7 @@
         android:ems="10"
         android:hint="Mobile"
         android:inputType="phone"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act_register_screen_et_email" />
@@ -77,6 +81,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act_register_screen_et_mobile" />
@@ -92,6 +97,7 @@
         android:ems="10"
         android:hint="Verify-Password"
         android:inputType="textPassword"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act_register_screen_et_password" />
