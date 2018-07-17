@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#7511e0">
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
 
+
+    <TextView
+        android:id="@+id/inter_details_p1_tv_what"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:text="What is it?"
+        android:textAlignment="center"
+        android:textColor="#2dc6ed"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inter_details_p1_tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="2sp"
+        android:text="Intern and Job International's Explore India program represents a true cross-cultural, social, technical and of-course academic discovery. With this program, you will have the opportunity to interact with people from various cultural, social, financial and technical background and will work with them, go on fun trips and not to forget the diversified industrial exposure by visiting industries and making a report at the end of project."
+        android:textAlignment="viewStart"
+        android:textColor="#2dc6ed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inter_details_p1_tv_what"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

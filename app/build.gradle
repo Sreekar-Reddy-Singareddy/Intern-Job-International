@@ -32,4 +32,5 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
     implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'me.biubiubiu.justifytext:library:1.1'
 }

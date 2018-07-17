@@ -5,9 +5,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -16,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.telephony.PhoneNumberUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,11 +38,12 @@ import com.example.apple.interninternational.Fragment.InternationalFragment;
 import com.example.apple.interninternational.Fragment.InternshipFragment;
 import com.example.apple.interninternational.Fragment.NgoFragment;
 import com.example.apple.interninternational.R;
+import com.example.apple.interninternational.Services.FileDownloadLoader;
 import com.example.apple.interninternational.Utilities.ProjectUtils;
 
 import org.w3c.dom.Text;
 
-public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, LoaderManager.LoaderCallbacks<Integer> {
 
     /**
      * STATIC reference of the current activity
@@ -62,6 +67,18 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
      * 1: There is one back navigation, so display back icon
      */
     public static int backStackCount = 0;
+    /**
+     * Details of the current logged in user
+     */
+    public static String ACTIVE_USER_NAME;
+    public static String ACTIVE_USER_EMAIL;
+    /**
+     * Permission request codes
+     */
+    private static int WRITE_FILES_PERMISSION = 1;
+
+    // Usual properties
+    private Bundle downlaodLoaderBundle;
 
     // UI Properties
     private NavigationView navigationView;
@@ -83,8 +100,10 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         View headerView = navigationView.getHeaderView(0);
         nameTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_title);
         nameTextview.setText(getIntent().getStringExtra("Name"));
+        ACTIVE_USER_NAME = nameTextview.getText().toString();
         emailTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_subtitle);
         emailTextview.setText(getIntent().getStringExtra("Email"));
+        ACTIVE_USER_EMAIL = emailTextview.getText().toString();
     }
 
     @Override
@@ -194,7 +213,44 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             }
         }
         else if (item.getItemId() == R.id.download_icon_menu_download_item){
-            Toast.makeText(this,"Downloading...",Toast.LENGTH_LONG).show();
+            // TODO: This is where the download of the apt brochure must happen
+            // What ever the country is, the brochure PDF must be downloaded into device storage
+            // Inputs - URL of the apt brochure
+            // Outputs - Apt brochure downloaded into device memory
+            // Processor - One class that takes this input and gives the output
+            String fileName;
+            String saveLocation = "";
+            String url = InternationalFragment.countriesData.get(InternationalFragment.SELECTED_COUNTRY).getBrochureUrl();
+            switch (InternationalFragment.SELECTED_COUNTRY) {
+                case "INDIA":
+                    Toast.makeText(this,"India Brochure...",Toast.LENGTH_LONG).show();
+                    fileName = "Explore_India.pdf";
+                    break;
+                case "CHINA":
+                    Toast.makeText(this,"China Brochure...",Toast.LENGTH_LONG).show();
+                    fileName = "Explore_China.pdf";
+                    break;
+                case "GERMANY":
+                    Toast.makeText(this,"Germany Brochure...",Toast.LENGTH_LONG).show();
+                    fileName = "Explore_Germany.pdf";
+                    break;
+                case "IJ":
+                    Toast.makeText(this,"I&J Brochure...",Toast.LENGTH_LONG).show();
+                    fileName = "Explore_IJ_Company.pdf";
+                    break;
+                default:
+                    fileName = "";
+                    break;
+            }
+            // Create a bundle with the needed values for the purpose of the loader
+            downlaodLoaderBundle = new Bundle();
+            downlaodLoaderBundle.putString("File_Url",url);
+            downlaodLoaderBundle.putString("Save_Location",saveLocation);
+            downlaodLoaderBundle.putString("File_Name",fileName);
+            // Take the required permissions and come back
+            if (takePermissions()) {
+                downloadFile();
+            }
         }
         else if (item.getItemId() == R.id.aboutus_screen_address_item){
             Toast.makeText(this,"Address",Toast.LENGTH_LONG).show();
@@ -275,6 +331,40 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     }
 
     /**
+     * This method takes the permission needed by the app
+     * to write the contents to external storage
+     */
+    private boolean takePermissions() {
+        Log.i("Checker", "takePermissions: Inside");
+        int writePermission = checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (writePermission == PackageManager.PERMISSION_GRANTED) {
+            Log.i("Write Permission", "takePermissions: Granted");
+            // Permission already granted return true
+            return true;
+        }
+        else {
+            Log.i("Write Permission", "takePermissions: Denied");
+            // Permission needs to be taken from the user
+            requestPermissions(new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, WRITE_FILES_PERMISSION);
+            // The result of the permission will be sent to the onResult method
+        }
+        return false;
+    }
+
+    /**
+     * Checks for the space available on the external storage
+     * and then returns true if space is available
+     * or returns false if space is not available
+     * @return
+     */
+    private boolean isSpaceAvailableOnStorage() {
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Overrides the default functionality of the back button
      * The default loigc is replaced by the custom logic
      */
@@ -292,6 +382,12 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         if (requestCode == 1234 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
             Toast.makeText(this, "Permission Granted",Toast.LENGTH_SHORT).show();
             ProjectUtils.makeACall(SkillsListAdapter.phoneNumber);
+            return;
+        }
+        if (requestCode == WRITE_FILES_PERMISSION && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this, "Permission Granted to Write Files",Toast.LENGTH_SHORT).show();
+            downloadFile();
+            return;
         }
     }
 
@@ -310,5 +406,54 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             HomeScreen.HOMESCREEN_REFERENCE.
                     getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_back);
         }
+    }
+
+    private void downloadFile() {
+        Log.i("Checker", "downloadFile: Inside");
+        // Before doing anything else, the external storage must have enough space
+        if (!isSpaceAvailableOnStorage()) {
+            // No space available on the storage to write files
+            Log.i("Memory Checker", "downloadFile: No Space");
+            return;
+        }
+        Loader fileDownloadLoader = getSupportLoaderManager().getLoader(111);
+        if (fileDownloadLoader == null) {
+            // Loader does not exist, so create one
+            getSupportLoaderManager().initLoader(111,downlaodLoaderBundle,this).forceLoad();
+        }
+        else {
+            // Loader exists, so restart the same
+            getSupportLoaderManager().restartLoader(111,downlaodLoaderBundle,this).forceLoad();
+        }
+    }
+
+    // Loader call back methods
+    @Override
+    public Loader<Integer> onCreateLoader(int id, Bundle args) {
+        return new FileDownloadLoader(this,args);
+    }
+
+    @Override
+    public void onLoadFinished(Loader<Integer> loader, Integer data) {
+        switch (data) {
+            case FileDownloadLoader.FILE_DOWNLOADED_AND_SAVED:
+                Toast.makeText(this, "File Downlaoded Succesfully!",Toast.LENGTH_SHORT).show();
+                break;
+            case FileDownloadLoader.FILE_DOWNLOADED_NOT_SAVED:
+                Toast.makeText(this, "File Could not be saved",Toast.LENGTH_SHORT).show();
+                break;
+            case FileDownloadLoader.FILE_NOT_DOWNLOADED:
+                Toast.makeText(this, "File Not Downloaded",Toast.LENGTH_SHORT).show();
+                break;
+            case FileDownloadLoader.FILE_NOT_FOUND:
+                Toast.makeText(this, "File Not Found",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        loader.reset();
+    }
+
+    @Override
+    public void onLoaderReset(Loader<Integer> loader) {
+        getSupportLoaderManager().destroyLoader(loader.getId());
     }
 }

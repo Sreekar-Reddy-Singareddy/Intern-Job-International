@@ -25,4 +25,68 @@
     <string name="home_screen_menu_blog_item">Blog</string>
     <string name="home_screen_menu_aboutus_item">About Us</string>
 
+    <!--International Internship Static Data Related Strings-->
+    <string name="what_title"></string>
+    <string name="who_title"></string>
+    <string name="when_title"></string>
+    <string-array name="what_content">
+        <item>Intern and Job International's Explore China program represents a true cross-cultural, social, technical and of-course academic discovery. With this program, you will have the opportunity to interact with people from various cultural, social, financial and technical background and will work with them, go on fun trips and not to forget the diversified industrial exposure by visiting industries and making a report at the end of project</item>
+        <item>Intern and Job International's Explore India program represents a true cross-cultural, social, technical and of-course academic discovery. With this program, you will have the opportunity to interact with people from various cultural, social, financial and technical background and will work with them, go on fun trips and not to forget the diversified industrial exposure by visiting industries and making a report at the end of project</item>
+        <item>Intern and Job International's Explore Germany program represents a true cross-cultural, social, technical and of-course academic discovery. With this program, you will have the opportunity to interact with people from various cultural, social, financial and technical background and will work with them, go on fun trips and not to forget the diversified industrial exposure by visiting industries and making a report at the end of project</item>
+        <item>Intern and Job International's Explore I and J program represents a true cross-cultural, social, technical and of-course academic discovery. With this program, you will have the opportunity to interact with people from various cultural, social, financial and technical background and will work with them, go on fun trips and not to forget the diversified industrial exposure by visiting industries and making a report at the end of project</item>
+    </string-array>
+    <string-array name="who_content">
+        <item>The Explore China program is addressed to undergraduate students and recent graduate students of any discipline and nationality</item>
+        <item>The Explore India program is addressed to undergraduate students and recent graduate students of any discipline and nationality</item>
+        <item>The Explore Germany program is addressed to undergraduate students and recent graduate students of any discipline and nationality</item>
+        <item>The Explore I and J program is addressed to undergraduate students and recent graduate students of any discipline and nationality</item>
+    </string-array>
+    <string-array name="when_content">
+        <item>4 projects namely May 2017(Project code: EC052017), June 2017 (Project code: EC062017), July 2017 (Project code: EC072017) and August 2017 (Project code: EC082017)</item>
+        <item>4 projects namely May 2017(Project code: EC052017), June 2017 (Project code: EC062017), July 2017 (Project code: EC072017) and August 2017 (Project code: EC082017)</item>
+        <item>4 projects namely May 2017(Project code: EC052017), June 2017 (Project code: EC062017), July 2017 (Project code: EC072017) and August 2017 (Project code: EC082017)</item>
+        <item>4 projects namely May 2017(Project code: EC052017), June 2017 (Project code: EC062017), July 2017 (Project code: EC072017) and August 2017 (Project code: EC082017)</item>
+    </string-array>
+    <string-array name="main_desc">
+        <item>It is our flagship project for this summer peak where people will explore the cultural diversity of China and we can promise the best experience delivery possible. It is a 3 week long project involving their stay in 3 different places while exploring the cultural diversity, interacting with foreign interns, industrial visits, camps, etc... We have an amazing itinerary planned for you. With trips and events planned for every day in China The intern will get to experience the culture of China along with the taste of industrial exposure, which be an amazing, life changing experience for the intern. The accommodation in China, trips and food are all included in the fee. The accommodation will have all basic necessities like comfortable beds, Wifi, kitchen, sanitation etc. The intern will be living with international interns from Russia, Egypt, Brazil, China, Europe, America, Uganda and many more. It is be a culturally diverse experience like never before. Lets have a summer like never before</item>
+        <item>It is our flagship project for this summer peak where people will explore the cultural diversity of China and we can promise the best experience delivery possible. It is a 3 week long project involving their stay in 3 different places while exploring the cultural diversity, interacting with foreign interns, industrial visits, camps, etc... We have an amazing itinerary planned for you. With trips and events planned for every day in China The intern will get to experience the culture of China along with the taste of industrial exposure, which be an amazing, life changing experience for the intern. The accommodation in China, trips and food are all included in the fee. The accommodation will have all basic necessities like comfortable beds, Wifi, kitchen, sanitation etc. The intern will be living with international interns from Russia, Egypt, Brazil, China, Europe, America, Uganda and many more. It is be a culturally diverse experience like never before. Lets have a summer like never before</item>
+        <item>It is our flagship project for this summer peak where people will explore the cultural diversity of China and we can promise the best experience delivery possible. It is a 3 week long project involving their stay in 3 different places while exploring the cultural diversity, interacting with foreign interns, industrial visits, camps, etc... We have an amazing itinerary planned for you. With trips and events planned for every day in China The intern will get to experience the culture of China along with the taste of industrial exposure, which be an amazing, life changing experience for the intern. The accommodation in China, trips and food are all included in the fee. The accommodation will have all basic necessities like comfortable beds, Wifi, kitchen, sanitation etc. The intern will be living with international interns from Russia, Egypt, Brazil, China, Europe, America, Uganda and many more. It is be a culturally diverse experience like never before. Lets have a summer like never before</item>
+        <item>It is our flagship project for this summer peak where people will explore the cultural diversity of China and we can promise the best experience delivery possible. It is a 3 week long project involving their stay in 3 different places while exploring the cultural diversity, interacting with foreign interns, industrial visits, camps, etc... We have an amazing itinerary planned for you. With trips and events planned for every day in China The intern will get to experience the culture of China along with the taste of industrial exposure, which be an amazing, life changing experience for the intern. The accommodation in China, trips and food are all included in the fee. The accommodation will have all basic necessities like comfortable beds, Wifi, kitchen, sanitation etc. The intern will be living with international interns from Russia, Egypt, Brazil, China, Europe, America, Uganda and many more. It is be a culturally diverse experience like never before. Lets have a summer like never before</item>
+    </string-array>
+    <string-array name="internship_price">
+        <item>550 USD</item>
+        <item>5000 INR</item>
+        <item>5000 INR</item>
+        <item>1850 USD</item>
+    </string-array>
+    <!--Download brochure links-->
+    <string-array name="international_brochures">
+        <item>http://www.internandjob.com/img/China%20Digital.pdf</item> <!--China-->
+        <item>http://www.internandjob.com/img/Itinerary_I&amp;J_Explore%20India_Final.pdf</item> <!--India-->
+        <item>http://www.internandjob.com/img/Itinerary_I&amp;J%20internship_Explore%20India.pdf</item> <!--I and J-->
+        <item>http://www.internandjob.com/img/Germany%20Digital.pdf</item> <!--Germany-->
+    </string-array>
+    <!--Display images links-->
+    <string-array name="china_images">
+        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
+        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
+        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
+    </string-array>
+    <string-array name="india_images">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="germany_images">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="ij_images">
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
 </resources>

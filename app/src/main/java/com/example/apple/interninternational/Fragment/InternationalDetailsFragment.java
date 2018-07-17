@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.apple.interninternational.Activity.HomeScreen;
 import com.example.apple.interninternational.Adapters.InterDetailsPagerAdapter;
@@ -16,10 +17,14 @@ import com.example.apple.interninternational.R;
 
 public class InternationalDetailsFragment extends Fragment {
 
+    // General properties for the purpose of other classes
+
+
     // UI Properties
     private View fragmentView;
     private ViewPager pager;
     private InterDetailsPagerAdapter adapter;
+    private TextView mainDescription, price;
 
     @Nullable
     @Override
@@ -40,5 +45,25 @@ public class InternationalDetailsFragment extends Fragment {
         adapter = new InterDetailsPagerAdapter(HomeScreen.HOMESCREEN_REFERENCE.getSupportFragmentManager());
         pager.setPageTransformer(true,new DepthPageTransformer());
         pager.setAdapter(adapter);
+        mainDescription = (TextView) fragmentView.findViewById(R.id.frag_inter_details_screen_tv_description);
+        price = (TextView )fragmentView.findViewById(R.id.frag_inter_details_screen_tv_price);
+        switch (InternationalFragment.SELECTED_COUNTRY) {
+            case "INDIA":
+                mainDescription.setText(InternationalFragment.countriesData.get("INDIA").getMainDesc());
+                price.setText(InternationalFragment.countriesData.get("INDIA").getPrice());
+                break;
+            case "CHINA":
+                mainDescription.setText(InternationalFragment.countriesData.get("CHINA").getMainDesc());
+                price.setText(InternationalFragment.countriesData.get("CHINA").getPrice());
+                break;
+            case "GERMANY":
+                mainDescription.setText(InternationalFragment.countriesData.get("GERMANY").getMainDesc());
+                price.setText(InternationalFragment.countriesData.get("GERMANY").getPrice());
+                break;
+            case "IJ":
+                mainDescription.setText(InternationalFragment.countriesData.get("IJ").getMainDesc());
+                price.setText(InternationalFragment.countriesData.get("IJ").getPrice());
+                break;
+        }
     }
 }

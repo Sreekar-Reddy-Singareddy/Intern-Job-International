@@ -3,18 +3,22 @@ package com.example.apple.interninternational.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.app.NavUtils;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.apple.interninternational.Beans.Register;
 import com.example.apple.interninternational.R;
 import com.example.apple.interninternational.Services.RegisterLoader;
 import com.example.apple.interninternational.Validations.RegisterValidation;
+
+import org.w3c.dom.Text;
 
 public class RegisterScreen extends AppCompatActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks<String> {
 
@@ -23,11 +27,11 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
     // UI properties
     private EditText firstName, lastName, emailId, mobile, password, verifyPassword;
     private Button register;
+    private TextView backToLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         setContentView(R.layout.act_register_screen);
         initialiseUi();
         registerBean = createRegisterBean();
@@ -46,6 +50,8 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
         password = (EditText) findViewById(R.id.act_register_screen_et_password);
         verifyPassword = (EditText) findViewById(R.id.act_register_screen_et_verify_password);
         register = (Button) findViewById(R.id.act_register_screen_bt_register);
+        backToLogin = (TextView) findViewById(R.id.act_register_screen_tv_login);
+        backToLogin.setOnClickListener(this);
         register.setOnClickListener(this);
     }
 
@@ -95,6 +101,11 @@ public class RegisterScreen extends AppCompatActivity implements View.OnClickLis
                 // Create new loader
                 getSupportLoaderManager().initLoader(2,loaderData,this).forceLoad();
             }
+        }
+        else if (v.getId() == backToLogin.getId()) {
+            // Go back to login page
+            // Going back to same activity object, not creating a new one
+            NavUtils.navigateUpFromSameTask(this);
         }
     }
 

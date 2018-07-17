@@ -53,7 +53,7 @@ public class InternshipFragment extends Fragment implements View.OnClickListener
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.frag_internship_screen_inter_card) {
-            Toast.makeText(getContext(),"International Card",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"InternationalCountry Card",Toast.LENGTH_SHORT).show();
             InternationalFragment internationalFragment = new InternationalFragment();
             HomeScreen.customReplaceFragment(R.id.act_home_screen_fl_frag,internationalFragment,"ShowInternationalFrag",true);
         }

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ij_logo"
@@ -18,14 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.LoginScreen" />
-        <activity android:name=".Activity.HomeScreen" />
+        <activity android:name=".Activity.LoginScreen">
+        </activity>
+        <activity android:name=".Activity.HomeScreen" >
+
+        </activity>
         <activity android:name=".Fragment.InternationalFragment" />
         <activity android:name=".Fragment.NationalFragment" />
         <activity android:name=".Fragment.InternationalDetailsFragment" />
         <activity android:name=".Fragment.NgoDetailsFragment" />
         <activity android:name=".Activity.CvTipsDetailsScreen" />
-        <activity android:name=".Activity.RegisterScreen" />
+        <activity android:name=".Activity.RegisterScreen"
+            android:parentActivityName=".Activity.HomeScreen">
+        </activity>
     </application>
 
 </manifest>

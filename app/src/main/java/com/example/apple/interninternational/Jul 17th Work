@@ -1,0 +1,7 @@
+TODO
++ Finish the download brochure part
++ URL of four countries are kept in strings xml
++ Create a utility class to download the file
++ Create a loader class to download the file
++ Based on the country, download the apt brochure from the URL
+- Complete logic for showing either LOGIN or APPLY button
