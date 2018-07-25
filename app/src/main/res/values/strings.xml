@@ -68,24 +68,28 @@
     </string-array>
     <!--Display images links-->
     <string-array name="china_images">
-        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
-        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
-        <item>https://io.telkomuniversity.ac.id/wp-content/uploads/2015/03/calypsotours.rs_daleke_destinacije_kina3.jpg</item>
+        <item>https://www.freepik.com/free-photo/the-great-wall_1193618.htm</item>
+        <item>https://www.freepik.com/free-photo/day-city-view_1278691.htm</item>
+        <item>https://www.freepik.com/free-photo/peak-bamboo-lijiang-rural-mist_1174603.htm</item>
+        <item>https://www.freepik.com/free-photo/blooming-branch-near-tea-ceremony-supplies_1591930.htm</item>
     </string-array>
     <string-array name="india_images">
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>https://images.freeimages.com/images/large-previews/5f9/taj-mahal-1-1211485.jpg</item>
+        <item>https://www.freepik.com/free-photo/spices-decoration-with-wooden-spoons-on-plate_1308402.htm</item>
+        <item>https://www.freepik.com/free-photo/all-the-indian-family-women-hold-spices-on-their-palms_1612816.htm</item>
+        <item>https://www.freepik.com/free-photo/kingdom-king-palace-shiva-india_1182122.htm</item>
     </string-array>
     <string-array name="germany_images">
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>https://www.freepik.com/free-photo/building-with-columns_946262.htm</item>
+        <item>https://www.freepik.com/free-photo/street-restaurant-in-the-old-town-regensburg-germany_1243317.htm</item>
+        <item>https://www.freepik.com/free-photo/view-of-dresden-germany_1329034.htm</item>
+        <item>https://www.freepik.com/free-photo/zwinger-palace-in-dresden_1329035.htm</item>
     </string-array>
     <string-array name="ij_images">
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>https://www.freepik.com/free-photo/blooming-branch-near-tea-ceremony-supplies_1591930.htm</item>
+        <item>https://www.freeimages.com/photo/taj-mahal-1-1211485</item>
+        <item>https://www.freepik.com/free-photo/the-great-wall_1193618.htm</item>
+        <item>https://www.freepik.com/free-photo/building-with-columns_946262.htm</item>
     </string-array>
 
 

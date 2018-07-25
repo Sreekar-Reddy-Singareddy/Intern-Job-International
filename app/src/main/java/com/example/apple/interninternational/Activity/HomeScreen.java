@@ -43,7 +43,9 @@ import com.example.apple.interninternational.Utilities.ProjectUtils;
 
 import org.w3c.dom.Text;
 
-public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, LoaderManager.LoaderCallbacks<Integer> {
+import java.util.ArrayList;
+
+public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, LoaderManager.LoaderCallbacks<ArrayList> {
 
     /**
      * STATIC reference of the current activity
@@ -99,11 +101,21 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         actionBar.setDisplayHomeAsUpEnabled(true);
         View headerView = navigationView.getHeaderView(0);
         nameTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_title);
-        nameTextview.setText(getIntent().getStringExtra("Name"));
-        ACTIVE_USER_NAME = nameTextview.getText().toString();
         emailTextview = (TextView) headerView.findViewById(R.id.home_nav_drawer_header_subtitle);
-        emailTextview.setText(getIntent().getStringExtra("Email"));
+
+        if (getIntent().getStringExtra("Email").equals("") && getIntent().getStringExtra("Name").equals("")) {
+            // User is not logged in
+            // User us anonymous
+            nameTextview.setText("Anonymous");
+            emailTextview.setText("Anonymous"); emailTextview.setVisibility(View.INVISIBLE);
+        }
+        else {
+            // User is logged in, so set the credits
+            nameTextview.setText(getIntent().getStringExtra("Name"));
+            emailTextview.setText(getIntent().getStringExtra("Email"));
+        }
         ACTIVE_USER_EMAIL = emailTextview.getText().toString();
+        ACTIVE_USER_NAME = nameTextview.getText().toString();
     }
 
     @Override
@@ -429,13 +441,14 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
 
     // Loader call back methods
     @Override
-    public Loader<Integer> onCreateLoader(int id, Bundle args) {
+    public Loader<ArrayList> onCreateLoader(int id, Bundle args) {
         return new FileDownloadLoader(this,args);
     }
 
     @Override
-    public void onLoadFinished(Loader<Integer> loader, Integer data) {
-        switch (data) {
+    public void onLoadFinished(Loader<ArrayList> loader, ArrayList data) {
+        Integer downloadResultCode = (Integer) data.get(0);
+        switch (downloadResultCode) {
             case FileDownloadLoader.FILE_DOWNLOADED_AND_SAVED:
                 Toast.makeText(this, "File Downlaoded Succesfully!",Toast.LENGTH_SHORT).show();
                 break;
@@ -453,7 +466,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     }
 
     @Override
-    public void onLoaderReset(Loader<Integer> loader) {
+    public void onLoaderReset(Loader<ArrayList> loader) {
         getSupportLoaderManager().destroyLoader(loader.getId());
     }
 }

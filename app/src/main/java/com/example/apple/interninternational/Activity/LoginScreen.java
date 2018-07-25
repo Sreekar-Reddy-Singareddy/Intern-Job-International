@@ -19,6 +19,8 @@ import com.example.apple.interninternational.R;
 import com.example.apple.interninternational.Services.LoginLoader;
 import com.example.apple.interninternational.Validations.LoginValidation;
 
+import org.w3c.dom.Text;
+
 public class LoginScreen extends AppCompatActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks<Boolean> {
 
     /**
@@ -37,7 +39,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
 
     // UI properties
     private Button login;
-    private TextView signUp;
+    private TextView signUp, skipLogin;
     private EditText username, password;
 
     // Global intent for HomeScreen
@@ -57,6 +59,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
      * Creates UI instances and binds them to the actual UI
      */
     private void initialiseUi() {
+        skipLogin = (TextView) findViewById(R.id.act_login_screen_tv_skip_login);
+        skipLogin.setOnClickListener(this);
         login = (Button) findViewById(R.id.act_login_screen_bt_login);
         login.setOnClickListener(this);
         signUp = (TextView) findViewById(R.id.act_login_screen_tv_signup);
@@ -93,11 +97,19 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
             login.setEnabled(false);
         }
         else if (v.getId() == signUp.getId()) {
-            // TODO: Logic to collect and insert user inputs and insert in database
             Toast.makeText(this, "Sign up loading...",Toast.LENGTH_SHORT).show();
             homeIntent.putExtra("UserChoice",REGISTER);
             Intent registerIntent = new Intent(this,RegisterScreen.class);
             startActivity(registerIntent);
+        }
+        else if (v.getId() == skipLogin.getId()) {
+            // User not logged in
+            Log.i("SKIP", "onClick: Inside Skip");
+            Intent skipIntent = new Intent(this, HomeScreen.class);
+            skipIntent.putExtra("UserChoice",SKIP_LOGIN);
+            skipIntent.putExtra("Name","");
+            skipIntent.putExtra("Email","");
+            startActivity(skipIntent);
         }
         // Loads the next activity
     }

@@ -48,22 +48,26 @@ public class InternationalFragment extends Fragment implements View.OnClickListe
         String [] mainDescArray = resources.getStringArray(R.array.main_desc);
         String [] priceArray = resources.getStringArray(R.array.internship_price);
         String [] brochureArray = resources.getStringArray(R.array.international_brochures);
+        String [] imagesUrlsChina = resources.getStringArray(R.array.china_images);
+        String [] imagesUrlsIndia = resources.getStringArray(R.array.india_images);
+        String [] imagesUrlsGermany = resources.getStringArray(R.array.germany_images);
+        String [] imagesUrlsIJ = resources.getStringArray(R.array.ij_images);
         // China
         InternationalCountry china = new InternationalCountry(whatTitle,whoTitle,whenTitle,
                 whatContentArray[0],whoContentArray[0],whenContentArray[0],
-                mainDescArray[0],priceArray[0],brochureArray[0]);
+                mainDescArray[0],priceArray[0],brochureArray[0],imagesUrlsChina);
         // India
         InternationalCountry india = new InternationalCountry(whatTitle,whoTitle,whenTitle,
                 whatContentArray[1],whoContentArray[1],whenContentArray[1],
-                mainDescArray[1],priceArray[1],brochureArray[1]);
+                mainDescArray[1],priceArray[1],brochureArray[1],imagesUrlsIndia);
         // Germany
         InternationalCountry ij = new InternationalCountry(whatTitle,whoTitle,whenTitle,
                 whatContentArray[2],whoContentArray[2],whenContentArray[2],
-                mainDescArray[2],priceArray[2],brochureArray[2]);
+                mainDescArray[2],priceArray[2],brochureArray[2],imagesUrlsGermany);
         // I and J
         InternationalCountry germany = new InternationalCountry(whatTitle,whoTitle,whenTitle,
                 whatContentArray[3],whoContentArray[3],whenContentArray[3],
-                mainDescArray[3],priceArray[3],brochureArray[3]);
+                mainDescArray[3],priceArray[3],brochureArray[3],imagesUrlsIJ);
         countriesData.put(CHINA,china);
         countriesData.put(INDIA,india);
         countriesData.put(GERMANY,germany);

@@ -14,7 +14,9 @@ public class InternationalCountry {
     private String price = "";
     private String brochureUrl = "";
 
-    public InternationalCountry(String whatTitle, String whoTitle, String whenTitle, String whatContent, String whoContent, String whenContent, String mainDesc, String price, String brochureUrl) {
+    private String [] imageUrls;
+
+    public InternationalCountry(String whatTitle, String whoTitle, String whenTitle, String whatContent, String whoContent, String whenContent, String mainDesc, String price, String brochureUrl, String[] imageUrls) {
         this.whatTitle = whatTitle;
         this.whoTitle = whoTitle;
         this.whenTitle = whenTitle;
@@ -24,6 +26,7 @@ public class InternationalCountry {
         this.mainDesc = mainDesc;
         this.price = price;
         this.brochureUrl = brochureUrl;
+        this.imageUrls = imageUrls;
     }
 
     public String getWhatTitle() {
@@ -96,5 +99,13 @@ public class InternationalCountry {
 
     public void setBrochureUrl(String brochureUrl) {
         this.brochureUrl = brochureUrl;
+    }
+
+    public String[] getImageUrls() {
+        return imageUrls;
+    }
+
+    public void setImageUrls(String[] imageUrls) {
+        this.imageUrls = imageUrls;
     }
 }

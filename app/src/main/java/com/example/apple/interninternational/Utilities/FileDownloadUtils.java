@@ -5,6 +5,9 @@ import android.util.Log;
 
 import com.example.apple.interninternational.Beans.Login;
 import com.example.apple.interninternational.Beans.Register;
+import com.example.apple.interninternational.Services.FileDownloadLoader;
+
+import org.apache.commons.io.IOUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,6 +19,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.PAIR_SEPERATOR;
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.Users;
@@ -28,34 +32,57 @@ import static com.example.apple.interninternational.Utilities.DataBaseConstants.
 public class FileDownloadUtils {
 
     /**
+     * Static field to store all the bytes [] of the downloaded file
+     */
+    private static byte[] DOWNLOADED_FILE_DATA = null;
+
+    /**
+     * Decides whether the file has to be saved or not on device
+     */
+    public static boolean SHOULD_SAVE = false;
+
+    /**
      * Takes the url string and there by downloads the file
      * Downloaded file is saved into the location passed here
      * @param url: Path for the resource on remote server
      * @param saveLocation: Path where the downloaded resource will be saved
      * @return: true if the task is success, else false
      */
-    public static int downloadFileAt(String url, String saveLocation, String fileName) {
+    public static ArrayList downloadFileAt(String url, String saveLocation, String fileName) {
+        ArrayList mainInfo = new ArrayList();
         try {
             URL mainUrl = createUrlFromString(url);
             if (mainUrl == null) {
-                return 3;
+                mainInfo.add(FileDownloadLoader.FILE_NOT_FOUND);
+                mainInfo.add(DOWNLOADED_FILE_DATA);
+                return mainInfo;
             }
             InputStream inputStream = makeConnectionFromUrl(mainUrl);
             if (inputStream == null) {
-                return 3;
+                mainInfo.add(FileDownloadLoader.FILE_NOT_FOUND);
+                mainInfo.add(DOWNLOADED_FILE_DATA);
+                return mainInfo;
             }
             if (createFileFromStream(inputStream,saveLocation,fileName)) {
                 // File downlaoded and saved successfully
-                return 0;
+                mainInfo.add(FileDownloadLoader.FILE_DOWNLOADED_AND_SAVED);
+                mainInfo.add(DOWNLOADED_FILE_DATA);
+                return mainInfo;
             }
         } catch (MalformedURLException e) {
             Log.i("URL Exception", "downloadFileAt: MalformedURL");
-            return 3;
+            mainInfo.add(FileDownloadLoader.FILE_NOT_FOUND);
+            mainInfo.add(DOWNLOADED_FILE_DATA);
+            return mainInfo;
         } catch (IOException e) {
             Log.i("IO Exception", "downloadFileAt: IO Exception because "+e.getMessage());
-            return 3;
+            mainInfo.add(FileDownloadLoader.FILE_NOT_FOUND);
+            mainInfo.add(DOWNLOADED_FILE_DATA);
+            return mainInfo;
         }
-        return 3;
+        mainInfo.add(FileDownloadLoader.FILE_NOT_FOUND);
+        mainInfo.add(DOWNLOADED_FILE_DATA);
+        return mainInfo;
     }
 
     /**
@@ -98,16 +125,22 @@ public class FileDownloadUtils {
         byte [] buffer = new byte[512];
         int bufferSize = 0;
         Log.i("Before", "createFileFromStream: ------------------");
-        File mainFile = new File(Environment.getExternalStorageDirectory(),fileName);
-        Log.i("Intermediate 1", "createFileFromStream: ------------------");
-        FileOutputStream outputStream = new FileOutputStream(mainFile);
-        while ((bufferSize = inputStream.read(buffer)) != -1) {
-            outputStream.write(buffer,0,bufferSize);
+        if (SHOULD_SAVE) {
+            File mainFile = new File(Environment.getExternalStorageDirectory(),fileName);
+            Log.i("Intermediate 1", "createFileFromStream: ------------------");
+            FileOutputStream outputStream = new FileOutputStream(mainFile);
+            while ((bufferSize = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer,0,bufferSize);
+            }
+            DOWNLOADED_FILE_DATA = IOUtils.toByteArray(inputStream);
+            inputStream.close();
+            outputStream.close();
+            Log.i("After", "createFileFromStream: ------------------");
+            Log.i("Full File Location", "createFileFromStream: full path = "+mainFile.getAbsolutePath());
         }
-        inputStream.close();
-        outputStream.close();
-        Log.i("After", "createFileFromStream: ------------------");
-        Log.i("Full File Location", "createFileFromStream: full path = "+mainFile.getAbsolutePath());
+        else {
+            DOWNLOADED_FILE_DATA = IOUtils.toByteArray(inputStream);
+        }
         return true;
     }
 }

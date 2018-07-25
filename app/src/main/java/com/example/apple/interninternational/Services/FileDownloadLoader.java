@@ -7,7 +7,9 @@ import android.support.v4.content.AsyncTaskLoader;
 
 import com.example.apple.interninternational.Utilities.FileDownloadUtils;
 
-public class FileDownloadLoader extends AsyncTaskLoader<Integer> {
+import java.util.ArrayList;
+
+public class FileDownloadLoader extends AsyncTaskLoader<ArrayList> {
 
     /**
      * Static properties that define the output of the loader task
@@ -26,7 +28,7 @@ public class FileDownloadLoader extends AsyncTaskLoader<Integer> {
     }
 
     @Override
-    public Integer loadInBackground() {
+    public ArrayList loadInBackground() {
         String saveLocation = loaderBundle.getString("Save_Location");
         String fileName = loaderBundle.getString("File_Name");
         String url = loaderBundle.getString("File_Url");

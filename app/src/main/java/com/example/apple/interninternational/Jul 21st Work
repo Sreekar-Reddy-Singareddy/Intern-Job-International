@@ -1,0 +1,11 @@
+TODO
++ Display the images for respective countries
++ The images should be stored only in the internal memory when downloaded
++ Each country may need around, say, 4 images
++ The 4 URLs for all these countries must be stored in string-array or any other storage
++ When the country is clicked, only then the array of the respective country will be read
++ Use the contents of the string array and download all the images one by one
++ These downloaded images must be accessible by the activity as and when each image is downloaded
++ To achieve this, the loader must return bytes of data which can later be converted into original data
++ The pager adapter must be updated with the data set as and when each image is downloaded
++ Change the apply or login button based on user choice
