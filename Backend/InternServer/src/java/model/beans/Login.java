@@ -1,5 +1,14 @@
-package com.example.apple.interninternational.Beans;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package model.beans;
 
+/**
+ *
+ * @author apple
+ */
 public class Login {
     private String name;
     private String email;
@@ -9,6 +18,10 @@ public class Login {
         this.name = name;
         this.email = email;
         this.password = nrml_pwd;
+    }
+
+    public Login() {
+        
     }
 
     public String getName() {
@@ -27,11 +40,11 @@ public class Login {
         this.email = email;
     }
 
-    public String getNrml_pwd() {
+    public String getPassword() {
         return password;
     }
 
-    public void setNrml_pwd(String nrml_pwd) {
-        this.password = nrml_pwd;
+    public void setPassword(String Password) {
+        this.password = Password;
     }
 }

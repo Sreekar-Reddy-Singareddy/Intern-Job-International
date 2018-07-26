@@ -36,7 +36,7 @@ public class RegisterLoader extends AsyncTaskLoader<String> {
     public String loadInBackground() {
         Register registerBean = this.bundle.getParcelable("RegisterBean");
         // Use the above data and make a http request
-        String httpResposneResult = NetworkUtils.fetchJsonResponseFrom("http://192.168.43.165:8085/registeruser",registerBean);
+        String httpResposneResult = NetworkUtils.fetchJsonResponseFrom("http://192.168.43.165:8080/InternServer/userregister",registerBean);
         Log.i("HttpResult", "loadInBackground: "+httpResposneResult);
         return httpResposneResult;
     }

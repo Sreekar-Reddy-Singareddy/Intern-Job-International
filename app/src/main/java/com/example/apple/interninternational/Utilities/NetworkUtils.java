@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.apple.interninternational.Beans.Login;
 import com.example.apple.interninternational.Beans.Register;
+import com.google.gson.Gson;
 
 import static android.provider.Telephony.Carriers.PASSWORD;
 import static com.example.apple.interninternational.Utilities.DataBaseConstants.PAIR_SEPERATOR;
@@ -121,26 +122,17 @@ public class NetworkUtils {
      */
     private static String getDataStringFor(Object requestData) {
         String finalRequestData = null;
+        Gson gson = new Gson();
         if (requestData instanceof Login) {
             // Data is of type Login.class
             Login loginData = (Login) requestData;
-            finalRequestData =
-                    Users.COL_EMAIL + VALUE_SEPERATOR + loginData.getEmail() +
-                    PAIR_SEPERATOR +
-                    Users.COL_PASSWORD + VALUE_SEPERATOR + loginData.getNrml_pwd();
+            finalRequestData = gson.toJson(loginData);
             Log.i("LoginData", "giveQueryFor: Final Data - "+finalRequestData);
         }
         else if (requestData instanceof Register) {
             // Data is of type Register.class
             Register registerData = (Register) requestData;
-            finalRequestData =
-                            Users.COL_NAME + VALUE_SEPERATOR + registerData.getName() +
-                            PAIR_SEPERATOR +
-                            Users.COL_EMAIL + VALUE_SEPERATOR + registerData.getEmail() +
-                            PAIR_SEPERATOR +
-                            Users.COL_MOBILE + VALUE_SEPERATOR + registerData.getMobile() +
-                            PAIR_SEPERATOR +
-                            Users.COL_PASSWORD + VALUE_SEPERATOR + registerData.getPassword();
+            finalRequestData = gson.toJson(registerData);
             System.out.println("*****"+finalRequestData);
         }
         return finalRequestData;
