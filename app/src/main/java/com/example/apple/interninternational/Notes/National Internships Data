@@ -1,0 +1,5 @@
+Data needed from Database:
+
+1. Branches (branches table)
+2. Location (cities table, states table)
+3. Application Date (job_apply table)

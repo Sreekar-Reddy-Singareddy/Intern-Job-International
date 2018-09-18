@@ -58,7 +58,7 @@ public class NetworkUtils {
         }
         catch (IOException e) {
             Log.i("NetworkUtils", "fetchJsonResponseFrom: Failed to make HTTP connection for this URL -> \n"+mainUrl);
-            Log.i("ErrorInfo", "fetchJsonResponseFrom: error because - "+e.getMessage());
+            Log.i("ErrorInfo", "fetchJsonResponseFrom: error because - "+e.getMessage()+e.getCause());
         }
         // After everything, return the json string
         // irrespective of what is there in it

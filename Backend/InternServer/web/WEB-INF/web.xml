@@ -19,6 +19,7 @@
         <servlet-name>Main</servlet-name>
         <url-pattern>/userlogin</url-pattern>
         <url-pattern>/userregister</url-pattern>
+        <url-pattern>/branches</url-pattern>
     </servlet-mapping>
     
 </web-app>

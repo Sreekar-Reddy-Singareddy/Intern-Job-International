@@ -1,7 +1,6 @@
 package com.example.apple.interninternational.Adapters;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,15 +13,13 @@ import com.example.apple.interninternational.Beans.Duration;
 import com.example.apple.interninternational.Beans.Location;
 import com.example.apple.interninternational.R;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class FilterInputsAdapter extends RecyclerView.Adapter<FilterInputsAdapter.FilterInputsViewHolder> {
 
     // Global properties\
     private Context context;
-    private ArrayList<Object> data;
+    private ArrayList data;
     private LayoutInflater inflater = null;
     private String whatInput;
     private int customLayoutCode;
@@ -34,7 +31,7 @@ public class FilterInputsAdapter extends RecyclerView.Adapter<FilterInputsAdapte
      * @param whatInput: which type of user input is being populated
      * @param customLayoutCode: custom layout xml file's resource id
      */
-    public FilterInputsAdapter(Context context, ArrayList<Object> data, String whatInput, int customLayoutCode){
+    public FilterInputsAdapter(Context context, ArrayList data, String whatInput, int customLayoutCode){
         this.context = context;
         this.data = data;
         this.whatInput = whatInput;
@@ -105,12 +102,9 @@ public class FilterInputsAdapter extends RecyclerView.Adapter<FilterInputsAdapte
          */
         if (this.whatInput.equals("Branch")){
             Branch branch = (Branch) data.get(position);
-            System.out.println("Inside IF Image: "+holder.branchImage);
-            System.out.println("Inside IF Name: "+holder.branchName);
-            System.out.println("Inside IF Count: "+holder.branchCount);
-            holder.branchImage.setImageResource(branch.getImageId());
             holder.branchName.setText(branch.getName());
-            holder.branchCount.setText(String.valueOf(branch.getCount()));
+            holder.branchCount.setText(branch.getId());
+            holder.branchImage.setImageResource(R.drawable.ic_launcher_background);
         }
         else if (this.whatInput.equals("Location")){
             Location location = (Location) data.get(position);

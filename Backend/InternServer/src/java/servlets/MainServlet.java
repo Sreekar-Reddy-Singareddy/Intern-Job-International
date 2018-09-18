@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.services.LoginService;
+import model.services.NationalInternshipService;
 import model.services.RegisterService;
 import model.validations.LoginValidation;
 
@@ -29,6 +30,7 @@ public class MainServlet extends HttpServlet {
 
     private LoginService loginService = new LoginService();
     private RegisterService registerService = new RegisterService();
+    private NationalInternshipService nationalInternshipService = new NationalInternshipService();
 
     /**
      * Every request will have a flag which tells the servlet what to do next
@@ -38,19 +40,19 @@ public class MainServlet extends HttpServlet {
     
     /**
      * Every request will get some response back
-     * The response is in the string format only
-     * This member contains that string
+     * The response is in the string format only.
+     * This member contains that string.
      */
     private String responseString = null;
     
     /**
      * Every response will have one writer, 
-     * through which data can be written to the response
+     * through which data can be written to the response.
      */
     private PrintWriter responseWriter = null;
     
     /**
-     * Universal GSON object used to work across with JSON and java beans
+     * Universal GSON object used to work across with JSON and java beans.
      */
     private Gson gson = new Gson();
 
@@ -58,19 +60,22 @@ public class MainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         responseWriter = resp.getWriter();
+        System.out.println("Inside GET");
         doPost(req, resp);
     }
 
     // Http request is of POST method
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        responseWriter = resp.getWriter();
         System.out.println("Request Method: " + req.getMethod());
         requestFlag = req.getRequestURI().substring(req.getRequestURI().lastIndexOf("/") + 1).toLowerCase();
         System.out.println("Request Flag: " + requestFlag);
         try {
             // Proceed with the request data
             beginServerWork(req, resp);
-            resp.getWriter().write(responseString);
+            responseWriter.write(responseString);
+            responseWriter.close();
             System.out.println("Response String: "+responseString);
         } catch (SQLException ex) {
             System.out.println("Some SQL exception -> "+ex.getMessage());
@@ -96,6 +101,9 @@ public class MainServlet extends HttpServlet {
         else if (requestFlag.equals("userregister")) {
             responseString = registerService.serveRequestWithData(reqDataInJsonFormat, gson);
             System.out.println("Response from register: "+responseString);
+        }
+        else if (requestFlag.equals("branches")) {
+            responseString = nationalInternshipService.getAllBranches(gson);
         }
     }
 

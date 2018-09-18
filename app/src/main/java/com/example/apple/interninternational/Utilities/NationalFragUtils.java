@@ -1,6 +1,5 @@
 package com.example.apple.interninternational.Utilities;
 
-import com.example.apple.interninternational.Beans.Branch;
 import com.example.apple.interninternational.Beans.Duration;
 import com.example.apple.interninternational.Beans.Location;
 import com.example.apple.interninternational.R;
@@ -30,16 +29,6 @@ public class NationalFragUtils {
      * Method to create branches list
      */
     private static void createBranches() {
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
-        branches.add(new Branch(R.drawable.ic_launcher_background,"Branch 1",0));
     }
 
     /**
